@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    
+}
+
+#reg_section{
+    border: 1px solid #ddd;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 70px;
+    border-radius: 5px;
+}
+
+.reg_header{
+    background-color: #5fcf80;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.reg_header h2{
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+#container_body{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+#heeder_content, #body_content{
+    display: flex;
+}
+
+#body{
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.num{
+    width: 30px;
+    
+}
+
+.name{
+    width: 250px;
+    text-transform: capitalize;
+}
+
+.add_num{
+    width: 120px;
+}
+
+.subject{
+    width: 50px;
+}
+
+.complete-border{
+    border: 1px solid #ddd;
+}
+
+.half-border{
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.small-border{
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.head{
+    background-color: #5fcf80;
+    color: #fff;
+    text-transform: uppercase;
+    height: 40px;
+}
+
+.head p{
+    height: 100%;
+    padding-left: 7px;
+    padding-top: 7px;
+}
+
+.body{
+    height: 30px;
+    
+}
+
+#body #body_content:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#body #body_content:hover {
+    background-color: #ddd;
+}
+
+.subject input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 3px 5px;
+    background-color: transparent;
+}
+
+.subject input:focus{
+    outline: none;
+    
+}
+
+#submit{
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+#submit input{
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background-color: #5fcf80;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border-radius: 20px;
+}
+
+#submit input:hover{
+    color: #5fcf80;
+    background-color: #fff;
+}
+
+
+#submit img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* javascript class ????????????????*/
+
+.showed{
+    display: none;
+}

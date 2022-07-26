@@ -1,0 +1,95 @@
+#view_contaner{
+    margin-top: 100px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 40px;
+}
+
+.header{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    background-color: #5fcf80;
+    color: #fff;
+    padding: 5px 0;
+    border-radius: 20px;
+}
+
+#view_image{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+#view_image .image{
+    width: 15%;
+    height: 150px;
+    margin-left: 42.5%;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#view_image .item{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.item h4, .item p{
+    color: #444;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.item a{
+    padding: 10px 15px;
+    background-color: #5fcf80;
+    border-radius: 20px;
+    
+}
+
+.item a:hover{
+    color: #5fcf80;
+    background-color: #ddd;
+    text-decoration: none;
+}
+
+#view_boidata{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+#view_boidata h4{
+    color: #fff;
+    background-color: #5fcf80;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+table{
+    width: 100%;
+}
+
+table tr td{
+    color: #444;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+
+}
+
+table tr .qualify{
+    font-weight: bolder;
+    width: 30%;
+}
+
+table tr .name{
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}

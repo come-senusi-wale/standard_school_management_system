@@ -1,0 +1,114 @@
+
+#transactio_container{
+    margin-top: 80px;
+    width: 80%;
+    margin-left: 10%;
+    padding: 40px 60px;
+    background-color: #fff;
+    margin-bottom: 80px;
+}
+
+#transaction_head{
+    display: flex;
+}
+
+#transaction_head p{
+    background-color: #eef0ef;
+    padding: 10px 20px;
+    border: 1px solid #eef0ef;
+    text-transform: capitalize;
+    color: #444;
+    margin-right: 10px;
+}
+
+#transaction_head .tranc_key {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+#transaction_head .tranc_item {
+    font-size: 20px;
+}
+
+
+
+/*  transaction body */
+
+.transaction_body{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eef0ef;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.transaction_body section{
+    display: flex;
+    
+}
+
+.transaction_body section .tranc_exp{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+.transaction_body section .tranc_val{
+     border: 1px solid #fff;
+     background-color: #fff;
+     padding: 10px;
+}
+
+.two{
+    display: flex;
+}
+
+.form_input{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_input input{
+    width: 400px;
+    height: 40px;
+    margin-right: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form_input textarea{
+    height: 100px;
+    width: 400px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form_input label{
+    text-transform: capitalize;
+    color: #444;
+    font-weight: 700;
+} 
+
+.form_input textarea:focus, .form_input input:focus{
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #5fcf80;
+}
+
+#submit input{
+    background-color: #5fcf80;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    text-transform: capitalize;
+    font-size: 19px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+
+#submit input:hover{
+    opacity: 0.5;
+}

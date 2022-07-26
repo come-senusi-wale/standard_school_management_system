@@ -1,0 +1,114 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+#form_container{
+    background-color: #fff;
+    margin-top: 150px;
+    width: 90%;
+    margin-left: 5%;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#form_container h2{
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #5fcf80;
+    font-weight: 500;
+}
+
+.input_container #header{
+    padding: 5px;
+    background-color: #5fcf80;
+    color: #fff;
+    border-radius: 10px;
+    opacity: 0.9;
+    margin-bottom: 50px;
+}
+
+.input_container #header h4{
+    font-size: 20px;
+    
+}
+
+.info{
+    margin-top: 80px;
+}
+
+input, select, textarea{
+    display: block;
+    width: 400px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #444444;
+    padding: 0 5px;
+}
+
+input:focus, select:focus, textarea:focus{
+    outline: none;
+    border: 1px solid #5fcf80;
+}
+
+label{
+    color: #5fcf80;
+    text-transform: capitalize;
+}
+
+.input_container .two{
+    padding: 0 5px;
+    display: flex;
+}
+
+.two .form_input{
+    margin-right: 50px;
+    margin-bottom: 40px;
+}
+
+/* styling submit button */
+
+
+
+.submit #submit{
+    color: #fff;
+    background-color: #5fcf80;
+    width: 200px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 200;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.submit #submit:hover{
+    opacity: 0.7;
+
+}
+
+
+/* styling error */
+
+.error{
+    text-align: center;
+    color: tomato;
+}
+
+.error #error{
+    color: tomato;
+    letter-spacing: 1px;
+}
+
+
+#success{
+    color: blue;
+    letter-spacing: 1px;
+}

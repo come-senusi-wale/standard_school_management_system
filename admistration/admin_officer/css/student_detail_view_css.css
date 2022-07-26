@@ -1,0 +1,190 @@
+#veiw_container{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-column-gap: 5px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 40px;
+}
+
+
+
+#first_section{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5px;
+}
+
+
+#second_section{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 5px;
+}
+
+
+#view_parent_info{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+}
+
+/* image section.................*/
+
+#view_image{
+    background-color: #fff;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#view_image .image{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+#view_image .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#view_image h4{
+    color: #444;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#view_image a{
+    background-color: #5fcf80;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+#view_image a:hover{
+    text-decoration: none;
+    color: #5fcf80;
+    background-color: #fff;
+}
+
+
+
+/* additional infomation ...............................*/
+#view_additon_info{
+    background-color: #fff;
+    padding: 20px;
+}
+
+#view_additon_info .header{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #5fcf80;
+    padding: 3px 0;
+    border-radius: 20px;
+}
+
+#view_additon_info div h3{
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+#view_additon_info .add_info{
+    display: flex;
+}
+
+#view_additon_info div ul{
+    width: 50%;
+}
+
+#view_additon_info div .qualify li{    
+    font-weight: bolder;
+}
+
+#view_additon_info div .name li{
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+#view_additon_info div ul li{
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    color: #444;
+    
+}
+
+
+
+/* styling boi-data*/
+
+#view_boidata{
+    background-color: #fff;
+    padding: 20px;
+}
+
+.boi_header{
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    background-color: #5fcf80;
+    padding: 3px 0;
+    border-radius: 20px;
+}
+
+
+#view_boidata .bio_list, .father_list{
+    display: flex;
+}
+
+#view_boidata .bio_list .bio_qualify{
+    width: 40%;
+}
+
+#view_boidata .bio_list .bio_name{
+    width: 60%;
+}
+
+#view_boidata .bio_list .bio_qualify li, .father_list .bio_qualify li{
+    font-weight: bolder;
+}
+
+#view_boidata .bio_list .bio_name li, .father_list .bio_name li {
+    letter-spacing: 1px;
+}
+
+#view_boidata .bio_list ul li, .father_list ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    color: #444;
+}
+
+
+
+
+
+/* styling some part of father and mother detail */
+
+
+
+#view_father_info{
+    background-color: #fff;
+    padding: 20px;
+}
+
+#view_mother_info{
+    background-color: #fff;
+    padding: 20px;
+}
+
+.father_list ul{
+    width: 50%;
+}

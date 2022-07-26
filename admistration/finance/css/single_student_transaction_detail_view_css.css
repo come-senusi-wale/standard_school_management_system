@@ -1,0 +1,96 @@
+#reg_section{
+    border: 1px solid #ddd;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 100px;
+    border-radius: 5px;
+}
+
+.reg_header{
+    background-color: #5fcf80;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.reg_header h2{
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+#transaction_section{
+    padding: 40px 0;
+}
+
+.transaction_container{
+    width: 60%;
+    margin-left: 20%;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px 15px;
+    background-color: #fff;
+}
+
+.payment_success{
+    text-align: center;
+    columns: #5fcf80;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.payment_success h3{
+    color: #5fcf80;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+
+.payment_icon{
+    text-align: center;
+}
+
+.payment_icon i{
+    font-size: 60px;
+    color: #5fcf80;
+    font-weight: lighter;
+}
+
+.payment_body{
+    margin: 20px 0;
+}
+
+.payment_body .item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment_body .item p{
+    color: #444;
+    text-transform: capitalize;
+}
+
+.payment_print{
+    text-align: center;
+}
+
+.payment_print a, #print_all a{
+    background-color: #5fcf80;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.payment_print a:hover, #print_all a:hover{
+    color: #fff;
+    background-color: #5fcf89;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+#print_all{
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+

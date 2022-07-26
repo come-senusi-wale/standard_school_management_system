@@ -1,0 +1,115 @@
+#reg_section{
+    border: 1px solid #ddd;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 100px;
+    border-radius: 5px;
+}
+
+.reg_header{
+    background-color: #5fcf80;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.reg_header h2{
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.reg_body{
+    padding: 40px;
+}
+
+.reg_body .reg_table table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.reg_table table th, .reg_table table td{
+    border: 1px solid #ddd;
+    color: #444;
+    padding: 8px;
+   
+}
+
+.reg_table table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #5fcf80;
+    color: white;
+    text-transform: capitalize;
+}
+
+ td{
+    font-size: 17px;
+}
+
+table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+.view_btn{
+    background-color: #5fcf80;
+}
+
+.edit_btn{
+    background-color: blue;
+}
+
+.delete_btn{
+    background-color: red;
+}
+
+.view_btn, .edit_btn, .delete_btn{
+    text-align: center;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.view_btn:hover, .edit_btn:hover, .delete_btn:hover{
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.6;
+}
+
+/* styling page*/
+
+.page{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page #pages{
+    display: flex;
+    margin-top: 20px;
+}
+
+#pages li a{
+    color: #5fcf80;
+    padding: 7px;
+    border: 1px solid #ddd;
+}
+
+#pages li a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #5fcf80;
+}
+
+#pages li a:active{
+    color: #fff;
+    background-color: #5fcf80;
+}
+

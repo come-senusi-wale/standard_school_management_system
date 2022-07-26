@@ -1,0 +1,68 @@
+
+#transactio_container{
+    margin-top: 80px;
+    width: 80%;
+    margin-left: 10%;
+    padding: 40px 60px;
+    background-color: #fff;
+    margin-bottom: 80px;
+}
+
+#transaction_head{
+    display: flex;
+}
+
+#transaction_head p{
+    background-color: #eef0ef;
+    padding: 10px 20px;
+    border: 1px solid #eef0ef;
+    text-transform: capitalize;
+    color: #444;
+    margin-right: 10px;
+}
+
+#transaction_head .tranc_key {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+#transaction_head .tranc_item {
+    font-size: 20px;
+}
+
+
+
+/*  transaction body */
+
+.transaction_body{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eef0ef;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.transaction_body section{
+    display: flex;
+    
+}
+
+.transaction_body section .tranc_exp{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+.transaction_body section .tranc_val{
+     border: 1px solid #fff;
+     background-color: #fff;
+     padding: 10px;
+}
+
+#chart{
+    background-color: aqua;
+    height: 400px;
+}

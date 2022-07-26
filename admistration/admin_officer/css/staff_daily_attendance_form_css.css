@@ -1,0 +1,113 @@
+#form_container{
+    background-color: #fff;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+#header{
+    padding: 40px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #5fcf80;
+}
+
+.input_container{
+    padding: 0 40px;
+}
+
+.input_container .two{
+
+    display: flex;
+}
+
+.input_container .two .form_input{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.form_input input, .form_input select{
+    width: 250px;
+    padding: 7px 5px;
+    color: #444;
+    border-radius: 10px;
+}
+
+.form_input label{
+    text-transform: capitalize;
+    color: #5fcf80;
+    
+}
+
+.form_input input:focus, .form_input select:focus{
+    outline: none;
+    border-color: #5fcf80;
+}
+
+#table{
+    padding: 0 40px;
+}
+
+#table table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, td{
+    border: 1px solid #ddd;
+}
+
+td{
+    color: #444;
+    text-transform: capitalize;
+    padding: 10px 5px;
+}
+
+thead tr td{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+tbody tr:nth-child(even) td{
+    background-color: #f2f2f2;
+}
+
+input[type="radio"]{
+    
+   width: 20px;
+   height: 20px;
+}
+
+input[type="radio"]:checked{
+    color: red;
+}
+
+
+
+
+.submit{
+    padding: 40px;
+}
+
+#submit{
+    color: #fff;
+    background-color: #5fcf80;
+    padding: 10px 15px;
+    border: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 20px;
+    width: 200px;
+    border-radius: 20px;
+    transition: all 500ms;
+}
+
+#submit:hover{
+    color: #5fcf80;
+    background-color: #fff;
+    border: 2px solid #5fcf80;
+}
