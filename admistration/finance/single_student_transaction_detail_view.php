@@ -14,6 +14,8 @@
         $addmission_num = $_GET['addmission_num'];
         $term = $_GET['term'];
         $session = $_GET['session'];
+        $name = $_GET['name'];
+
     }
 
     $array_three = array($class, 'transaction', 'table');
@@ -58,13 +60,13 @@
     <section id="reg_section">
         <div class="reg_header">
             <h2>
-                <p>akinyemi saheed wale transaction details</p>
-                <span>2020/6262727</span>
+                <p><?php echo $name ?> transaction details</p>
+                <span><?php echo $addmission_num ?></span>
             </h2>
             <p id="error" style="color: red;"></p>
             <h2>
-                <p>20220/2020</p>
-                <span>first term</span>
+                <p><?php echo $session ?></p>
+                <span><?php echo $term ?> term</span>
             </h2>
         </div>
 

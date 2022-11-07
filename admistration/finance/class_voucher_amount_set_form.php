@@ -83,7 +83,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>voucher generation form</title>
+    <title>student voucher generation form</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/links_css.css">
@@ -104,14 +104,14 @@
     <div id="form_container">
 
 
-        <h2>class school fees generation form</h2>
+        <h2>student class school fees generation form</h2>
 
         <div id="error" style="text-align: center;">
             <p style="color: tomato; margin-bottom: 20px;" id="fail"></p>
             <p style="color: blue;" id="correct"></p>
         </div>
 
-        <form action="class_voucher_amount_set_form.php"  method="POST">
+        <form action=""  method="POST">
 
 
             

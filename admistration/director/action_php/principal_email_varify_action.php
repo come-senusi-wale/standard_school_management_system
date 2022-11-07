@@ -67,7 +67,7 @@
 
                     if ($query_run_two) {
                         
-                        $school_mail = "walesaheed@gmail.com";
+                        $school_mail = "eduspringofgrace@gmail.com";
                         $name = "email varification";
                         $subject = "code to varified ur email before register as princpal";
                         $body = "copy this code  ".$email_code." into space provide and continue the registration";
@@ -79,20 +79,7 @@
                         
                         $mail = new PHPMailer();
 
-                        /*$mail->isSMTP();
-                        $mail->Host = "smtp.gmail.com";
-                        $mail->SMTPAuth = true;
-                        $mail->Username = "akinyemisaheedwale@gmail.com";
-                        $mail->Password = $pwd;
-                        $mail->Port = 465;
-                        $mail->SMTPSecure = "ssl";
-
-
-                        $mail->isHTML(true);
-                        $mail->setFrom($school_mail, $name);
-                        $mail->addAddress($principal_email);
-                        $mail->Subject = $subject;
-                        $mail->Body = $body;*/
+                        
                         $mail->IsSMTP();  // telling the class to use SMTP
                         //$mail->SMTPDebug = 2;
                         $mail->Mailer = "smtp";
@@ -102,8 +89,8 @@
                         $mail->SMTPAuth = true; // turn on SMTP authentication
                         //$mail->Username = "myemail@example.com"; // SMTP username
                         //$mail->Password = "mypasswword"; // SMTP password
-                        $mail->Username = "akinyemiwalesaheed@gmail.com"; // SMTP username
-                        $mail->Password = "08037768663"; // SMTP password
+                        $mail->Username = "eduspringofgrace@gmail.com"; // SMTP username
+                        $mail->Password = "qcygveozmfpfacjw"; // SMTP password
                         //$Mail->Priority = 1;
                         $mail->AddAddress($principal_email);
                         $mail->SetFrom('akinyemisaheedwale@gmail.com');

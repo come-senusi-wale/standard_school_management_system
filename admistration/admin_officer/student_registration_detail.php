@@ -15,7 +15,7 @@
 
     //if (isset($_POST['submit'])) {
 
-        $limit = 2;
+        $limit = 50;
 
         if (isset($_GET['page']) && isset($_GET['session'])) {
             

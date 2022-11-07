@@ -186,10 +186,17 @@
                     }
                 }
 
+                if ($failure_count < 1) {
+                    $failure = 0;
+                    $pass = 100 - $failure;
 
-                $failure = ($failure_count/$num_two) * 100;
-                $pass = 100 - $failure;
+                }else {
+                    $failure = ($failure_count/$num_two) * 100;
+                    $pass = 100 - $failure;
 
+                }
+
+                
 
                 //calculating number of student in particular score using bar chart:::::::
 

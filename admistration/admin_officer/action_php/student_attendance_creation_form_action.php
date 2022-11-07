@@ -99,7 +99,7 @@
                                     //$correct = 'attendence successfully created';
                                     //header("location: ../student_attendance_creation_form.php?correct=$correct");
 
-                                    $school_mail = "walesaheed@gmail.com";
+                                    $school_mail = "eduspringofgrace@gmail.com";
                                     $name = "email varification";
                                     $subject = "code to varified ur email before register as formaster/formistress";
                                     $body = "copy this code  ".$email_code." into space provided and continue the registration";
@@ -119,10 +119,9 @@
                                     //$mail->Port = 587;
                                     $mail->Port = 465;
                                     $mail->SMTPAuth = true; // turn on SMTP authentication
-                                    //$mail->Username = "myemail@example.com"; // SMTP username
-                                    //$mail->Password = "mypasswword"; // SMTP password
-                                    $mail->Username = "akinyemiwalesaheed@gmail.com"; // SMTP username
-                                    $mail->Password = "08037768663"; // SMTP password
+                                    
+                                    $mail->Username = "eduspringofgrace@gmail.com"; // SMTP username
+                                    $mail->Password = "qcygveozmfpfacjw"; // SMTP password
                                     //$Mail->Priority = 1;
                                     $mail->AddAddress($email);
                                     $mail->SetFrom($school_mail, $name);
@@ -132,8 +131,7 @@
                                     $mail->WordWrap = 50;
 
                                     if ($mail->send()) {
-                                        //$correct = 'attendence successfully created';
-                                        //header("location: ../student_attendance_creation_form.php?correct=$correct");
+                                        
                                         header("location: ../student_attendance_email_verification.php?email_code=$email_token");
 
 

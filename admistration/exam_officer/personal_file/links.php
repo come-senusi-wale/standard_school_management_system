@@ -10,7 +10,7 @@
 
             <div class="btn-group">
                 <button type="button" class=" dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-                    online exam
+                    s-online exam
                 </button>
                 <div class="dropdown-menu">
                 <a class="dropdown-item" href="e_exam/school_online_creation_form.php">online exam creation</a>
@@ -18,6 +18,20 @@
                 <a class="dropdown-item" href="e_exam/class_online_exam_result_form.php">class result</a>
                 <a class="dropdown-item" href="e_exam/single_student_online_exam_result_form.php">single student result</a>
                 <a class="dropdown-item" href="e_exam/student_online_exam_romove_form.php">student online exam remove</a>
+                
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class=" dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                   p-online exam
+                </button>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="e_exam/pupil_school_online_creation_form.php">online exam creation</a>
+                <a class="dropdown-item" href="e_exam/pupil_school_online_detail_form.php">online exam detail</a>
+                <a class="dropdown-item" href="e_exam/pupil_class_online_exam_result_form.php">class result</a>
+                <a class="dropdown-item" href="e_exam/single_pupil_online_exam_result_form.php">single pupils result</a>
+                <a class="dropdown-item" href="e_exam/pupil_online_exam_romove_form.php">pupils online exam remove</a>
                 
                 </div>
             </div>
@@ -46,8 +60,8 @@
                 <div class="dropdown-menu">
                 <a class="dropdown-item" href="pupil_ca_form.php">CA insertion</a>
                 <a class="dropdown-item" href="pupil_class_ca_detail_form.php">class ca detail</a>
-                <a class="dropdown-item" href="pupil_student_ca_form.php">single student CA insertion</a>
-                <a class="dropdown-item" href="pupil_student_class_ca_detail_form.php">single student ca detail</a>
+                <a class="dropdown-item" href="single_pupil_ca_form.php">single pupil CA insertion</a>
+                <a class="dropdown-item" href="single_pupil_class_ca_detail_form.php">single pupil ca detail</a>
                 
                 </div>
             </div>
@@ -63,12 +77,36 @@
                 </div>
             </div>
 
+
             <div class="btn-group">
-                <button type="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">result
+                <button type="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">pupil exam
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="pupil_exam_form.php">exam insertion</a>
+                    <a class="dropdown-item" href="pupil_class_exam_detail_form.php">class exam detail</a>
+                    <a class="dropdown-item" href="single_pupil_exam_form.php">single pupil exam insertion</a>
+                    <a class="dropdown-item" href="single_pupil_class_exam_detail_form.php">single pupil exam detail</a>
+                </div>
+            </div>
+
+
+            <div class="btn-group">
+                <button type="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">s-result
                 </button>
                 <div class="dropdown-menu">
                 <a class="dropdown-item" href="student_class_result_form.php">class result</a>
                 <a class="dropdown-item" href="single_student_class_result_form.php">single student result</a>
+                
+                </div>
+            </div>
+
+
+            <div class="btn-group">
+                <button type="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">p-result
+                </button>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="pupil_class_result_form.php">class result</a>
+                <a class="dropdown-item" href="single_pupil_class_result_form.php">single student result</a>
                 
                 </div>
             </div>

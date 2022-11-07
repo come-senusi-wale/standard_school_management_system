@@ -52,7 +52,7 @@
         <div id="form_container">
 
 
-            <h2>formaster/formistress email resend form</h2>
+            <h2>student formaster/formistress email resend form</h2>
 
             <div id="error" style="text-align: center;">
                 <p style="color: tomato;"><?php echo $result; ?></p>

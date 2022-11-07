@@ -48,7 +48,7 @@ if (isset($_POST['submit'])) {
 
                 
                     
-                    $school_mail = "walesaheed@gmail.com";
+                    $school_mail = "eduspringofgrace@gmail.com";
                     $name = "email varification";
                     $subject = "code to varified ur email before login as principal";
                     $body = "copy this code  ".$id_code." into space provide and login";
@@ -69,8 +69,8 @@ if (isset($_POST['submit'])) {
                     $mail->SMTPAuth = true; // turn on SMTP authentication
                     
 
-                    $mail->Username = "waleschool20@gmail.com"; // SMTP username
-                    $mail->Password = "zhapmmvvohwucrwr"; // SMTP password
+                    $mail->Username = "eduspringofgrace@gmail.com"; // SMTP username
+                    $mail->Password = "qcygveozmfpfacjw"; // SMTP password
                     //$Mail->Priority = 1;
                     $mail->AddAddress($principal_email);
                     $mail->SetFrom($school_mail, $name);

@@ -67,7 +67,7 @@ if (isset($_POST['submit'])) {
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>subject result performance details view</title>
+<title>student subject result performance details view</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/links_css.css">
@@ -264,8 +264,14 @@ if (isset($_POST['submit'])) {
 
         <?php
 
-                $failure = ($counter_failure/$num) * 100;
-                $pass = 100 - $failure;
+                if ($counter_failure < 1) {
+                    $failure = 0;
+                    $pass = 100 - $failure;
+                }else {
+                    $failure = ($counter_failure/$num) * 100;
+                    $pass = 100 - $failure;
+                }
+                
         
             }
         ?>

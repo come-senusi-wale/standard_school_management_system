@@ -230,6 +230,84 @@ if (isset($_POST['action'])) {
 
 
 
+    // deleting pupil ca from ca records view detail  and also for single student ?????????????????
+
+    if ($_POST['action'] == 'delete pupil ca record from view detail') {
+        
+
+        $class = $_POST['classe'];
+        $ca = $_POST['ca'];
+        $addmission_number = $_POST['addmission_number'];
+        $term = $_POST['term'];
+        $session = $_POST['session'];
+        
+        $array_two = array($class, $term, 'term', 'ca', 'table');
+        $class_ca_table = implode('_', $array_two);
+
+        $query = "DELETE FROM $class_ca_table WHERE addmission_num = '$addmission_number' AND session = '$session' AND ca = '$ca'";
+
+        $query_run = mysqli_query($conn, $query);
+
+        if ($query_run) {
+            
+            $output = 'records deleted successfully';
+        }else{
+            $output = 'records fail to delete';
+        }
+
+
+        echo $output;
+
+    }
+
+
+
+
+
+    // delete pupil exam record from exam detail view and also for single pupil ???????????????????????????????
+
+
+
+    if ($_POST['action'] == 'delete pupil exam record from view detail') {
+        
+
+        $class = $_POST['classe'];
+        
+        $addmission_number = $_POST['addmission_number'];
+        $term = $_POST['term'];
+        $session = $_POST['session'];
+        
+        $array_two = array($class, 'exam', 'table');
+        $class_exam_table = implode('_', $array_two);
+
+        $query = "DELETE FROM $class_exam_table WHERE addmission_num = '$addmission_number' AND session = '$session' AND term = '$term'";
+
+        $query_run = mysqli_query($conn, $query);
+
+        if ($query_run) {
+            
+            $output = 'records deleted successfully';
+        }else{
+            $output = 'records fail to delete';
+        }
+
+
+        echo $output;
+
+    }
+
+
+
+
+
+    
+     // 2021/p/53236
+    
+
+
+
+
+
 
 
 

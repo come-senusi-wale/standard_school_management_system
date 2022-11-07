@@ -32,7 +32,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>online exam status change form</title>
+    <title>student online exam status change form</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/links_css.css">
@@ -53,7 +53,7 @@
     <div id="form_container">
 
 
-        <h2>online exam status change form</h2>
+        <h2>student online exam status change form</h2>
 
         <div id="error" style="text-align: center;">
             <p style="color: tomato; margin-bottom: 20px;" id="fail"><?php echo $fail; ?></p>
@@ -107,26 +107,7 @@
         $(document).ready(function(){
 
 
-            // session event handler...........................................................
-
-            $('#session').keyup(function(){
-
-                var session = $('#session').val();
-                var reg = /^([0-9]{4})\/([0-9]{4})$/;
-                var correct = reg.test(session);
-
-                if (!correct) {
-                    $('#session_error').text('data format 2011/2021');
-                    $('#session').css('border-color', 'tomato');
-                }
-
-                if (correct) {
-                    $('#session_error').text('');
-                    $('#session').css('border-color', '#444');
-                }
-            })
-
-
+            
 
 
 

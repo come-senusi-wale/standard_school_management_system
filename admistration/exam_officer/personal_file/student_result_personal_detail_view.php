@@ -64,7 +64,7 @@
             $agri = $row['agri'];
 
             $geo = $row['geo'];
-            $gov = $row['gov'];
+            
             $com = $row['com'];
             $civ = $row['civ'];
 
@@ -87,7 +87,7 @@
             $f_agri = $row['f_agri'];
 
             $f_geo = $row['f_geo'];
-            $f_gov = $row['f_gov'];
+            
             $f_com = $row['f_com'];
             $f_civ = $row['f_civ'];
 
@@ -108,8 +108,8 @@
             $s_eco = $row['s_eco'];
             $s_agri = $row['s_agri'];
 
+            
             $s_geo = $row['s_geo'];
-            $s_gov = $row['s_gov'];
             $s_com = $row['s_com'];
             $s_civ = $row['s_civ'];
 
@@ -131,7 +131,7 @@
             $t_agri = $row['t_agri'];
 
             $t_geo = $row['t_geo'];
-            $t_gov = $row['t_gov'];
+            
             $t_com = $row['t_com'];
             $t_civ = $row['t_civ'];
 
@@ -153,7 +153,7 @@
             $to_agri = $row['to_agri'];
 
             $to_geo = $row['to_geo'];
-            $to_gov = $row['to_gov'];
+           
             $to_com = $row['to_com'];
             $to_civ = $row['to_civ'];
 
@@ -167,10 +167,10 @@
             $eng = $row['eng'];
             $rel = $row['rel'];
             $bus = $row['bus'];
-            $lit = $row['lit'];
+            $sos = $row['sos'];
 
             $cca = $row['cca'];
-            $fre = $row['fre'];
+            $kni = $row['kni'];
             $mat = $row['mat'];
 
             $b_s = $row['b_s'];
@@ -182,6 +182,11 @@
             $b_t = $row['b_t'];
             $com = $row['com'];
 
+            $gam = $row['gam'];
+            $a_c = $row['a_c'];
+            $lan = $row['lan'];
+            $woo = $row['woo'];
+
 
 
             // ca1 score from exam table for student
@@ -190,10 +195,10 @@
             $f_eng = $row['f_eng'];
             $f_rel = $row['f_rel'];
             $f_bus = $row['f_bus'];
-            $f_lit = $row['f_lit'];
+            $f_sos = $row['f_sos'];
 
             $f_cca = $row['f_cca'];
-            $f_fre = $row['f_fre'];
+            $f_kni = $row['f_kni'];
             $f_mat = $row['f_mat'];
 
             $f_b_s = $row['f_b_s'];
@@ -205,6 +210,11 @@
             $f_b_t = $row['f_b_t'];
             $f_com = $row['f_com'];
 
+            $f_gam = $row['f_gam'];
+            $f_a_c = $row['f_a_c'];
+            $f_lan = $row['f_lan'];
+            $f_woo = $row['f_woo'];
+
 
 
             // ca2 score from exam table for student
@@ -212,10 +222,10 @@
             $s_eng = $row['s_eng'];
             $s_rel = $row['s_rel'];
             $s_bus = $row['s_bus'];
-            $s_lit = $row['s_lit'];
+            $s_sos = $row['s_sos'];
 
             $s_cca = $row['s_cca'];
-            $s_fre = $row['s_fre'];
+            $s_kni = $row['s_kni'];
             $s_mat = $row['s_mat'];
 
             $s_b_s = $row['s_b_s'];
@@ -227,6 +237,12 @@
             $s_b_t = $row['s_b_t'];
             $s_com = $row['s_com'];
 
+            $s_gam = $row['s_gam'];
+            $s_a_c = $row['s_a_c'];
+            $s_lan = $row['s_lan'];
+            $s_woo = $row['s_woo'];
+
+
 
 
             // ca3 score from exam table for student
@@ -234,10 +250,10 @@
             $t_eng = $row['t_eng'];
             $t_rel = $row['t_rel'];
             $t_bus = $row['t_bus'];
-            $t_lit = $row['t_lit'];
+            $t_sos = $row['t_sos'];
 
             $t_cca = $row['t_cca'];
-            $t_fre = $row['t_fre'];
+            $t_kni = $row['t_kni'];
             $t_mat = $row['t_mat'];
 
             $t_b_s = $row['t_b_s'];
@@ -249,6 +265,11 @@
             $t_b_t = $row['t_b_t'];
             $t_com = $row['t_com'];
 
+            $t_gam = $row['t_gam'];
+            $t_a_c = $row['t_a_c'];
+            $t_lan = $row['t_lan'];
+            $t_woo = $row['t_woo'];
+
 
             // total score of each subject from exam table for student
 
@@ -256,10 +277,10 @@
             $to_eng = $row['to_eng'];
             $to_rel = $row['to_rel'];
             $to_bus = $row['to_bus'];
-            $to_lit = $row['to_lit'];
+            $to_sos = $row['to_sos'];
 
             $to_cca = $row['to_cca'];
-            $to_fre = $row['to_fre'];
+            $to_kni = $row['to_kni'];
             $to_mat = $row['to_mat'];
 
             $to_b_s = $row['to_b_s'];
@@ -270,6 +291,11 @@
             $to_phe = $row['to_phe'];
             $to_b_t = $row['to_b_t'];
             $to_com = $row['to_com'];
+
+            $to_gam = $row['to_gam'];
+            $to_a_c = $row['to_a_c'];
+            $to_lan = $row['to_lan'];
+            $to_woo = $row['to_woo'];
 
             $total_score = $row['total_score'];
                 
@@ -405,7 +431,7 @@
 
         //student total average 
 
-        $student_average = round(($total_score/14), 2);
+        $student_average = round(($total_score/13), 2);
 
 
 
@@ -425,12 +451,12 @@
         $agri_pos = position('to_agri', $addmission_number, $class_exam_table, $term, $session, $conn);
         $geo_pos = position('to_geo', $addmission_number, $class_exam_table, $term, $session, $conn);
 
-        $gov_pos = position('to_gov', $addmission_number, $class_exam_table, $term, $session, $conn);
+        
         $com_pos = position('to_com', $addmission_number, $class_exam_table, $term, $session, $conn);
         $civ_pos = position('to_civ', $addmission_number, $class_exam_table, $term, $session, $conn);
 
 
-        // grage for various subject?????????????????????????????
+        // grade for various subject?????????????????????????????
 
         $eng_grade = grade($to_eng);
         $rel_grade = grade($to_rel);
@@ -446,7 +472,7 @@
         $agri_grade = grade($to_agri);
 
         $geo_grade = grade($to_geo);
-        $gov_grade = grade($to_gov);
+        
         $com_grade = grade($to_com);
         $civ_grade = grade($to_civ);
 
@@ -470,7 +496,7 @@
         $agri_max = max_score('to_agri', $class_exam_table, $term, $session, $conn);
 
         $geo_max = max_score('to_geo', $class_exam_table, $term, $session, $conn);
-        $gov_max = max_score('to_gov', $class_exam_table, $term, $session, $conn);
+        
         $com_max = max_score('to_com', $class_exam_table, $term, $session, $conn);
         $civ_max = max_score('to_civ', $class_exam_table, $term, $session, $conn);
 
@@ -492,7 +518,7 @@
         $agri_min = min_score('to_agri', $class_exam_table, $term, $session, $conn);
 
         $geo_min = min_score('to_geo', $class_exam_table, $term, $session, $conn);
-        $gov_min = min_score('to_gov', $class_exam_table, $term, $session, $conn);
+        
         $com_min = min_score('to_com', $class_exam_table, $term, $session, $conn);
         $civ_min = min_score('to_civ', $class_exam_table, $term, $session, $conn);
 
@@ -512,7 +538,7 @@
         $agri_avg = avg_score('to_agri', $class_exam_table, $term, $session, $conn);
 
         $geo_avg = avg_score('to_geo', $class_exam_table, $term, $session, $conn);
-        $gov_avg = avg_score('to_gov', $class_exam_table, $term, $session, $conn);
+       
         $com_avg = avg_score('to_com', $class_exam_table, $term, $session, $conn);
         $civ_avg = avg_score('to_civ', $class_exam_table, $term, $session, $conn);
         
@@ -520,7 +546,7 @@
 
         //student total average 
 
-        $student_average = round(($total_score/14), 2);
+        $student_average = round(($total_score/18), 2);
 
 
        
@@ -529,10 +555,10 @@
         $eng_pos = position('to_eng', $addmission_number, $class_exam_table, $term, $session, $conn);
         $rel_pos = position('to_rel', $addmission_number, $class_exam_table, $term, $session, $conn);
         $bus_pos = position('to_bus', $addmission_number, $class_exam_table, $term, $session, $conn);
-        $lit_pos = position('to_lit', $addmission_number, $class_exam_table, $term, $session, $conn);
+        $sos_pos = position('to_sos', $addmission_number, $class_exam_table, $term, $session, $conn);
 
         $cca_pos = position('to_cca', $addmission_number, $class_exam_table, $term, $session, $conn);
-        $fre_pos = position('to_fre', $addmission_number, $class_exam_table, $term, $session, $conn);
+        $kni_pos = position('to_kni', $addmission_number, $class_exam_table, $term, $session, $conn);
         $mat_pos = position('to_mat', $addmission_number, $class_exam_table, $term, $session, $conn);
         $b_s_pos = position('to_b_s', $addmission_number, $class_exam_table, $term, $session, $conn);
 
@@ -544,6 +570,11 @@
         $b_t_pos = position('to_b_t', $addmission_number, $class_exam_table, $term, $session, $conn);
         $com_pos = position('to_com', $addmission_number, $class_exam_table, $term, $session, $conn);
 
+        $gam_pos = position('to_gam', $addmission_number, $class_exam_table, $term, $session, $conn);
+        $a_c_pos = position('to_a_c', $addmission_number, $class_exam_table, $term, $session, $conn);
+        $lan_pos = position('to_lan', $addmission_number, $class_exam_table, $term, $session, $conn);
+        $woo_pos = position('to_woo', $addmission_number, $class_exam_table, $term, $session, $conn);
+
 
         // grage for various subject?????????????????????????????
 
@@ -551,9 +582,9 @@
         $rel_grade = grade($to_rel);
         $bus_grade = grade($to_bus);
 
-        $lit_grade = grade($to_lit);
+        $sos_grade = grade($to_sos);
         $cca_grade = grade($to_cca);
-        $fre_grade = grade($to_fre);
+        $kni_grade = grade($to_kni);
 
         $mat_grade = grade($to_mat);
         $b_s_grade = grade($to_b_s);
@@ -565,6 +596,12 @@
         $b_t_grade = grade($to_b_t);
         $com_grade = grade($to_com);
 
+        $gam_grade = grade($to_gam);
+        $a_c_grade = grade($to_a_c);
+        $lan_grade = grade($to_lan);
+        $woo_grade = grade($to_woo);
+
+
         // for grade in position in class
 
         $position_grade = grade($student_average);
@@ -575,9 +612,9 @@
         $rel_max = max_score('to_rel', $class_exam_table, $term, $session, $conn);
         $bus_max = max_score('to_bus', $class_exam_table, $term, $session, $conn);
 
-        $lit_max = max_score('to_lit', $class_exam_table, $term, $session, $conn);
+        $sos_max = max_score('to_sos', $class_exam_table, $term, $session, $conn);
         $cca_max = max_score('to_cca', $class_exam_table, $term, $session, $conn);
-        $fre_max = max_score('to_fre', $class_exam_table, $term, $session, $conn);
+        $kni_max = max_score('to_kni', $class_exam_table, $term, $session, $conn);
         
         $mat_max = max_score('to_mat', $class_exam_table, $term, $session, $conn);
         $b_s_max = max_score('to_b_s', $class_exam_table, $term, $session, $conn);
@@ -589,6 +626,11 @@
         $b_t_max = max_score('to_b_t', $class_exam_table, $term, $session, $conn);
         $com_max = max_score('to_com', $class_exam_table, $term, $session, $conn);
 
+        $gam_max = max_score('to_gam', $class_exam_table, $term, $session, $conn);
+        $a_c_max = max_score('to_a_c', $class_exam_table, $term, $session, $conn);
+        $lan_max = max_score('to_lan', $class_exam_table, $term, $session, $conn);
+        $woo_max = max_score('to_woo', $class_exam_table, $term, $session, $conn);
+
 
 
 
@@ -597,9 +639,9 @@
         $rel_min = min_score('to_rel', $class_exam_table, $term, $session, $conn);
         $bus_min = min_score('to_bus', $class_exam_table, $term, $session, $conn);
 
-        $lit_min = min_score('to_lit', $class_exam_table, $term, $session, $conn);
+        $sos_min = min_score('to_sos', $class_exam_table, $term, $session, $conn);
         $cca_min = min_score('to_cca', $class_exam_table, $term, $session, $conn);
-        $fre_min = min_score('to_fre', $class_exam_table, $term, $session, $conn);
+        $kni_min = min_score('to_kni', $class_exam_table, $term, $session, $conn);
         
         $mat_min = min_score('to_mat', $class_exam_table, $term, $session, $conn);
         $b_s_min = min_score('to_b_s', $class_exam_table, $term, $session, $conn);
@@ -611,15 +653,20 @@
         $b_t_min = min_score('to_b_t', $class_exam_table, $term, $session, $conn);
         $com_min = min_score('to_com', $class_exam_table, $term, $session, $conn);
 
+        $gam_min = min_score('to_gam', $class_exam_table, $term, $session, $conn);
+        $a_c_min = min_score('to_a_c', $class_exam_table, $term, $session, $conn);
+        $lan_min = min_score('to_lan', $class_exam_table, $term, $session, $conn);
+        $woo_min = min_score('to_woo', $class_exam_table, $term, $session, $conn);
+
 
         // average score for various subject???????????????????????
         $eng_avg = avg_score('to_eng', $class_exam_table, $term, $session, $conn);
         $rel_avg = avg_score('to_rel', $class_exam_table, $term, $session, $conn);
         $bus_avg = avg_score('to_bus', $class_exam_table, $term, $session, $conn);
 
-        $lit_avg = avg_score('to_lit', $class_exam_table, $term, $session, $conn);
+        $sos_avg = avg_score('to_sos', $class_exam_table, $term, $session, $conn);
         $cca_avg = avg_score('to_cca', $class_exam_table, $term, $session, $conn);
-        $fre_avg = avg_score('to_fre', $class_exam_table, $term, $session, $conn);
+        $kni_avg = avg_score('to_kni', $class_exam_table, $term, $session, $conn);
         
         $mat_avg = avg_score('to_mat', $class_exam_table, $term, $session, $conn);
         $b_s_avg = avg_score('to_b_s', $class_exam_table, $term, $session, $conn);
@@ -630,6 +677,11 @@
         $phe_avg = avg_score('to_phe', $class_exam_table, $term, $session, $conn);
         $b_t_avg = avg_score('to_b_t', $class_exam_table, $term, $session, $conn);
         $com_avg = avg_score('to_com', $class_exam_table, $term, $session, $conn);
+
+        $gam_avg = avg_score('to_gam', $class_exam_table, $term, $session, $conn);
+        $a_c_avg = avg_score('to_a_c', $class_exam_table, $term, $session, $conn);
+        $lan_avg = avg_score('to_lan', $class_exam_table, $term, $session, $conn);
+        $woo_avg = avg_score('to_woo', $class_exam_table, $term, $session, $conn);
         
     }
     
@@ -665,7 +717,14 @@
 
     // attendance percentage......
 
-    $attendance_percentage = round(($total_present/$total_attendance) * 100, 0);
+    if ($total_attendance < 1) {
+        $attendance_percentage = 0;
+        
+    }else {
+        $attendance_percentage = round(($total_present/$total_attendance) * 100, 0);
+    }
+
+    
 
 
 
@@ -1009,7 +1068,7 @@
                         <td class="score"><?php echo $ent_avg ?></td>
                     </tr>
                     <tr>
-                        <td class="subject">physics</td>
+                        <td class="subject">physics/commerce</td>
                         <td class="score"><?php echo $f_phy ?></td>
                         <td class="score"><?php echo $s_phy ?></td>
                         <td class="score"><?php echo $t_phy ?></td>
@@ -1022,7 +1081,7 @@
                         <td class="score"><?php echo $phy_avg ?></td>
                     </tr>
                     <tr>
-                        <td class="subject">chemistry</td>
+                        <td class="subject">chemistry/government</td>
                         <td class="score"><?php echo $f_che ?></td>
                         <td class="score"><?php echo $s_che ?></td>
                         <td class="score"><?php echo $t_che ?></td>
@@ -1099,7 +1158,7 @@
                         <td class="score"><?php echo $agri_avg ?></td>
                     </tr>
                     <tr>
-                        <td class="subject">geography</td>
+                        <td class="subject">geography/literature</td>
                         <td class="score"><?php echo $f_geo ?></td>
                         <td class="score"><?php echo $s_geo ?></td>
                         <td class="score"><?php echo $t_geo ?></td>
@@ -1111,19 +1170,7 @@
                         <td class="score"><?php echo $geo_min ?></td>
                         <td class="score"><?php echo $geo_avg ?></td>
                     </tr>
-                    <tr>
-                        <td class="subject">government</td>
-                        <td class="score"><?php echo $f_gov ?></td>
-                        <td class="score"><?php echo $s_gov ?></td>
-                        <td class="score"><?php echo $t_gov ?></td>
-                        <td class="score"><?php echo $gov ?></td>
-                        <td class="score"><?php echo $to_gov ?>%</td>
-                        <td class="score"><?php echo $gov_grade ?></td>
-                        <td class="score"><?php echo $gov_pos ?></td>
-                        <td class="score"><?php echo $gov_max ?></td>
-                        <td class="score"><?php echo $gov_min ?></td>
-                        <td class="score"><?php echo $gov_avg ?></td>
-                    </tr>
+                    
                     
                     <tr>
                         <td class="subject">computer</td>
@@ -1252,17 +1299,17 @@
                         <td class="score"><?php echo $bus_avg ?></td>
                     </tr>
                     <tr>
-                        <td class="subject">literature</td>
-                        <td class="score"><?php echo $f_lit ?></td>
-                        <td class="score"><?php echo $s_lit ?></td>
-                        <td class="score"><?php echo $t_lit ?></td>
-                        <td class="score"><?php echo $lit ?></td>
-                        <td class="score"><?php echo $to_lit ?>%</td>
-                        <td class="score"><?php echo $lit_grade ?></td>
-                        <td class="score"><?php echo $lit_pos ?></td>
-                        <td class="score"><?php echo $lit_max ?></td>
-                        <td class="score"><?php echo $lit_min ?></td>
-                        <td class="score"><?php echo $lit_avg ?></td>
+                        <td class="subject">socail studies</td>
+                        <td class="score"><?php echo $f_sos ?></td>
+                        <td class="score"><?php echo $s_sos ?></td>
+                        <td class="score"><?php echo $t_sos ?></td>
+                        <td class="score"><?php echo $sos ?></td>
+                        <td class="score"><?php echo $to_sos ?>%</td>
+                        <td class="score"><?php echo $sos_grade ?></td>
+                        <td class="score"><?php echo $sos_pos ?></td>
+                        <td class="score"><?php echo $sos_max ?></td>
+                        <td class="score"><?php echo $sos_min ?></td>
+                        <td class="score"><?php echo $sos_avg ?></td>
                     </tr>
                     <tr>
                         <td class="subject">creative art</td>
@@ -1278,17 +1325,17 @@
                         <td class="score"><?php echo $cca_avg ?></td>
                     </tr>
                     <tr>
-                        <td class="subject">french</td>
-                        <td class="score"><?php echo $f_fre ?></td>
-                        <td class="score"><?php echo $s_fre ?></td>
-                        <td class="score"><?php echo $t_fre ?></td>
-                        <td class="score"><?php echo $fre ?></td>
-                        <td class="score"><?php echo $to_fre ?>%</td>
-                        <td class="score"><?php echo $fre_grade ?></td>
-                        <td class="score"><?php echo $fre_pos ?></td>
-                        <td class="score"><?php echo $fre_max ?></td>
-                        <td class="score"><?php echo $fre_min ?></td>
-                        <td class="score"><?php echo $fre_avg ?></td>
+                        <td class="subject">knitting</td>
+                        <td class="score"><?php echo $f_kni ?></td>
+                        <td class="score"><?php echo $s_kni ?></td>
+                        <td class="score"><?php echo $t_kni ?></td>
+                        <td class="score"><?php echo $kni ?></td>
+                        <td class="score"><?php echo $to_kni ?>%</td>
+                        <td class="score"><?php echo $kni_grade ?></td>
+                        <td class="score"><?php echo $kni_pos ?></td>
+                        <td class="score"><?php echo $kni_max ?></td>
+                        <td class="score"><?php echo $kni_min ?></td>
+                        <td class="score"><?php echo $kni_avg ?></td>
                     </tr>
                     <tr>
                         <td class="subject">mathenatics</td>
@@ -1392,6 +1439,64 @@
                         <td class="score"><?php echo $com_max ?></td>
                         <td class="score"><?php echo $com_min ?></td>
                         <td class="score"><?php echo $com_avg ?></td>
+                    </tr>
+
+                    <tr>
+                        <td class="subject">garment making</td>
+                        <td class="score"><?php echo $f_gam ?></td>
+                        <td class="score"><?php echo $s_gam ?></td>
+                        <td class="score"><?php echo $t_gam ?></td>
+                        <td class="score"><?php echo $gam ?></td>
+                        <td class="score"><?php echo $to_gam ?>%</td>
+                        <td class="score"><?php echo $gam_grade ?></td>
+                        <td class="score"><?php echo $gam_pos ?></td>
+                        <td class="score"><?php echo $gam_max ?></td>
+                        <td class="score"><?php echo $gam_min ?></td>
+                        <td class="score"><?php echo $gam_avg ?></td>
+                    </tr>
+
+                    <tr>
+                        <td class="subject">arts and craft</td>
+                        <td class="score"><?php echo $f_a_c ?></td>
+                        <td class="score"><?php echo $s_a_c ?></td>
+                        <td class="score"><?php echo $t_a_c ?></td>
+                        <td class="score"><?php echo $a_c ?></td>
+                        <td class="score"><?php echo $to_a_c ?>%</td>
+                        <td class="score"><?php echo $a_c_grade ?></td>
+                        <td class="score"><?php echo $a_c_pos ?></td>
+                        <td class="score"><?php echo $a_c_max ?></td>
+                        <td class="score"><?php echo $a_c_min ?></td>
+                        <td class="score"><?php echo $a_c_avg ?></td>
+                    </tr>
+
+
+                    <tr>
+                        <td class="subject">languages</td>
+                        <td class="score"><?php echo $f_lan ?></td>
+                        <td class="score"><?php echo $s_lan ?></td>
+                        <td class="score"><?php echo $t_lan ?></td>
+                        <td class="score"><?php echo $lan ?></td>
+                        <td class="score"><?php echo $to_lan ?>%</td>
+                        <td class="score"><?php echo $lan_grade ?></td>
+                        <td class="score"><?php echo $lan_pos ?></td>
+                        <td class="score"><?php echo $lan_max ?></td>
+                        <td class="score"><?php echo $lan_min ?></td>
+                        <td class="score"><?php echo $lan_avg ?></td>
+                    </tr>
+
+
+                    <tr>
+                        <td class="subject">wood work</td>
+                        <td class="score"><?php echo $f_woo ?></td>
+                        <td class="score"><?php echo $s_woo ?></td>
+                        <td class="score"><?php echo $t_woo ?></td>
+                        <td class="score"><?php echo $woo ?></td>
+                        <td class="score"><?php echo $to_woo ?>%</td>
+                        <td class="score"><?php echo $woo_grade ?></td>
+                        <td class="score"><?php echo $woo_pos ?></td>
+                        <td class="score"><?php echo $woo_max ?></td>
+                        <td class="score"><?php echo $woo_min ?></td>
+                        <td class="score"><?php echo $woo_avg ?></td>
                     </tr>
                 
                 

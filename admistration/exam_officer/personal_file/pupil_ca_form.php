@@ -104,7 +104,7 @@
                         <select name="ca" id="class">
                             <option value="ca1">CA1</option>
                             <option value="ca2">CA2</option>
-                            <option value="ca3">CA3</option>
+                            
                         </select>
                     </div>
 

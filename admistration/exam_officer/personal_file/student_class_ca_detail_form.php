@@ -43,7 +43,7 @@
     <div id="form_container">
 
 
-        <h2>class ca records detail form</h2>
+        <h2>student class ca records detail form</h2>
 
         <div id="error" style="text-align: center;">
             <p style="color: tomato; margin-bottom: 20px;" id="fail"><?php echo $fail; ?></p>

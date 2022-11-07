@@ -32,6 +32,7 @@
             $status = $row['status'];
             $gender = $row['gender'];
             $image = $row['image'];
+            $cv = $row['cv'];
 
         }
     }
@@ -74,7 +75,7 @@
         <section id="view_image">
 
             <div class="image">
-                <img src="image/<?php echo $image ?>" alt="">
+                <img src="../../image/staff/<?php echo $image ?>" alt="">
             </div>
 
             <div class="item">
@@ -134,6 +135,10 @@
                     </tr>
                 </table>
 
+            </div>
+
+            <div>
+                <iframe src="../../image/cv/<?php echo $cv ?>" frameborder="0" height="300px" width="90%"></iframe>
             </div>
 
         </section>

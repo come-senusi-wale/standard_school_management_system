@@ -59,7 +59,7 @@
 
                         if ($query_run_two) {
                             
-                            $school_mail = "walesaheed@gmail.com";
+                            $school_mail = "eduspringofgrace@gmail.com";
                             $name = "email varification";
                             $subject = "code to varified ur email before login as academic officer";
                             $body = "copy this code  ".$id_code." into space provided and login";
@@ -82,8 +82,8 @@
                             $mail->SMTPAuth = true; // turn on SMTP authentication
                             
 
-                            $mail->Username = "waleschool20@gmail.com"; // SMTP username
-                            $mail->Password = "zhapmmvvohwucrwr"; // SMTP password
+                            $mail->Username = "eduspringofgrace@gmail.com"; // SMTP username
+                            $mail->Password = "qcygveozmfpfacjw"; // SMTP password
                             //$Mail->Priority = 1;
                             $mail->AddAddress($email);
                             $mail->SetFrom('akinyemisaheedwale@gmail.com');
@@ -387,7 +387,7 @@
 
 
 
-        // dynamic dependency for class category....................
+        // dynamic dependency for student class category....................
 
         if ($_POST['action'] == 'dynamic dependency for class') {
             
@@ -396,6 +396,42 @@
             
 
             $query = "SELECT * FROM class_category_table WHERE category = '$value'";
+            $query_run = mysqli_query($conn, $query);
+
+            $num = mysqli_num_rows($query_run);
+
+            if ($num > 0) {
+
+                $output .= '<div>';
+                
+                while ($row = mysqli_fetch_array($query_run)) {
+                    
+                    $class = $row['class'];
+                    $output .= '<option value="'.$class.'">'.$class.'</option>';
+                    
+                }
+
+                $output .= '</div>';
+
+                
+            }
+
+            echo $output;
+        }
+
+
+
+
+
+        // dynamic dependency for pupil class category....................
+
+        if ($_POST['action'] == 'dynamic dependency for pupil class') {
+            
+            $value = mysqli_real_escape_string($conn, $_POST['value']);
+
+            
+
+            $query = "SELECT * FROM pupil_class_category_table WHERE category = '$value'";
             $query_run = mysqli_query($conn, $query);
 
             $num = mysqli_num_rows($query_run);

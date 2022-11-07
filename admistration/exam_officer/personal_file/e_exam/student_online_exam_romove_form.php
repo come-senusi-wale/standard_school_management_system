@@ -53,7 +53,7 @@
             <p style="color: blue;" id="correct"></p>
         </div>
 
-        <form action="single_student_online_exam_result_detail_view.php"  method="POST">
+        <form action=""  method="POST">
 
 
             

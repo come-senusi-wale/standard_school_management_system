@@ -36,7 +36,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 
             if ($query_run_two) {
                 
-                $school_mail = "walesaheed@gmail.com";
+                $school_mail = "eduspringofgrace@gmail.com";
                 $name = "login varification";
                 $subject = "code to varified ur account";
                 $body = "copy this code  ".$new_id_code." into space provide and continue to log in";
@@ -60,8 +60,8 @@ use PHPMailer\PHPMailer\PHPMailer;
                 $mail->SMTPAuth = true; // turn on SMTP authentication
                
 
-                $mail->Username = "waleschool20@gmail.com"; // SMTP username
-                $mail->Password = "zhapmmvvohwucrwr"; // SMTP password
+                $mail->Username = "eduspringofgrace@gmail.com"; // SMTP username
+                $mail->Password = "qcygveozmfpfacjw"; // SMTP password
                 //$Mail->Priority = 1;
                 $mail->AddAddress($email);
                 $mail->SetFrom('akinyemisaheedwale@gmail.com');

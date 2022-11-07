@@ -107,7 +107,16 @@
 
                         $highest_total = $row_three['total_score'];
 
-                        $highest_avg = round(($highest_total/14), 2);
+                        if ($category == 'senior') {
+                            
+                            $highest_avg = round(($highest_total/13), 2);
+
+                        }else {
+
+                            $highest_avg = round(($highest_total/18), 2);
+                        }
+
+                        
                     }
 
 
@@ -126,7 +135,16 @@
 
                         $lowest_total = $row_four['total_score'];
 
-                        $lowest_avg = round(($lowest_total/14), 2);
+                        if ($category == 'senior') {
+                            
+                            $lowest_avg = round(($lowest_total/13), 2);
+
+                        }else {
+
+                            $lowest_avg = round(($lowest_total/18), 2);
+                        }
+
+                        
                     }
 
 
@@ -141,8 +159,18 @@
                     $row_five = mysqli_fetch_array($query_run_five);
 
                     $avg = $row_five['class_avg'];
+
+                    if ($category == 'senior') {
+                            
+                        $class_avg = round(($avg/13), 2);
+
+                    }else {
+
+                        $class_avg = round(($avg/18), 2);
+                    }
+
                     
-                    $class_avg = round(($avg/14), 2);
+                    
 
 
 
@@ -178,7 +206,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>class result detail</title>
+    <title>single student class result detail</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/links_css.css">
@@ -230,19 +258,19 @@
                             <div class="name complete-border head"><p>name</p></div>
                             <div class="add_num complete-border head"><p>addmission No</p></div>
                             <div class="subject complete-border head"><p>eng</p></div>
-                            <div class="subject complete-border head"><p>rel</p></div>
-                            <div class="subject complete-border head"><p>ent</p></div>
-                            <div class="subject complete-border head"><p>phy</p></div>
-                            <div class="subject complete-border head"><p>che</p></div>
-                            <div class="subject complete-border head"><p>bio</p></div>
                             <div class="subject complete-border head"><p>mat</p></div>
+                            <div class="subject complete-border head"><p>phy/com</p></div>
+                            <div class="subject complete-border head"><p>che/gov</p></div>
+                            <div class="subject complete-border head"><p>bio</p></div>
+                            <div class="subject complete-border head"><p>agri</p></div>
+                            <div class="subject complete-border head"><p>ent</p></div>
                             <div class="subject complete-border head"><p>f/m</p></div>
                             <div class="subject complete-border head"><p>eco</p></div>
-                            <div class="subject complete-border head"><p>Agri</p></div>
-                            <div class="subject complete-border head"><p>geo</p></div>
-                            <div class="subject complete-border head"><p>gov</p></div>
                             <div class="subject complete-border head"><p>com</p></div>
                             <div class="subject complete-border head"><p>civ</p></div>
+                            <div class="subject complete-border head"><p>geo/lit</p></div>
+                            <div class="subject complete-border head"><p>rel</p></div>
+                            
                             <div class="subject complete-border head"><p>tol</p></div>
                             
                             <div class="subject complete-border head" class="action_btn" style="width: 60px;"><p>view</p></div>
@@ -259,20 +287,24 @@
                             <div class="num complete-border head" style="width: 45px;"><p>pos</p></div>
                             <div class="name complete-border head"><p>name</p></div>
                             <div class="add_num complete-border head"><p>addmission No</p></div>
-                            <div class="subject complete-border head"><p>eng</p></div>
-                            <div class="subject complete-border head"><p>rel</p></div>
-                            <div class="subject complete-border head"><p>bus</p></div>
-                            <div class="subject complete-border head"><p>lit</p></div>
-                            <div class="subject complete-border head"><p>CCA</p></div>
-                            <div class="subject complete-border head"><p>fre</p></div>
                             <div class="subject complete-border head"><p>mat</p></div>
-                            <div class="subject complete-border head"><p>B/S</p></div>
-                            <div class="subject complete-border head"><p>H/E</p></div>
-                            <div class="subject complete-border head"><p>Agri</p></div>
+                            <div class="subject complete-border head"><p>eng</p></div>
+                            <div class="subject complete-border head"><p>b/s</p></div>
+                            <div class="subject complete-border head"><p>b/t</p></div>
+                            <div class="subject complete-border head"><p>sos</p></div>
                             <div class="subject complete-border head"><p>civ</p></div>
-                            <div class="subject complete-border head"><p>PHE</p></div>
-                            <div class="subject complete-border head"><p>B/T</p></div>
-                            <div class="subject complete-border head"><p>Com</p></div>
+                            <div class="subject complete-border head"><p>agri</p></div>
+                            <div class="subject complete-border head"><p>h/e</p></div>
+                            <div class="subject complete-border head"><p>rel</p></div>
+                            <div class="subject complete-border head"><p>kni</p></div>
+                            <div class="subject complete-border head"><p>com</p></div>
+                            <div class="subject complete-border head"><p>bus</p></div>
+                            <div class="subject complete-border head"><p>phe</p></div>
+                            <div class="subject complete-border head"><p>cca</p></div>
+                            <div class="subject complete-border head"><p>gam</p></div>
+                            <div class="subject complete-border head"><p>a/c</p></div>
+                            <div class="subject complete-border head"><p>lan</p></div>
+                            <div class="subject complete-border head"><p>woo</p></div>
                             <div class="subject complete-border head"><p>tol</p></div>
                             
                             <div class="subject complete-border head" class="action_btn" style="width: 60px;"><p>view</p></div>
@@ -307,13 +339,12 @@
                                 $to_bio = $row_two['to_bio'];
 
                                 $to_mat = $row_two['to_mat'];
-                                $to_eco = $row_two['to_eco'];
                                 $to_f_m = $row_two['to_f_m'];
+                                $to_eco = $row_two['to_eco'];
 
                                 $to_agri = $row_two['to_agri'];
                                 $to_geo = $row_two['to_geo'];
-                                $to_gov = $row_two['to_gov'];
-
+                               
                                 $to_com = $row_two['to_com'];
                                 $to_civ = $row_two['to_civ'];
                                 $total_score = $row_two['total_score'];
@@ -330,19 +361,19 @@
                                     <input type="hidden" name="addmission_num" value="<?php echo $addmission_number?>">
                                     
                                     <div class="subject small-border body"><?php echo $to_eng?></div>
-                                    <div class="subject small-border body"><?php echo $to_rel?></div>
-                                    <div class="subject small-border body"><?php echo $to_ent?></div>
+                                    <div class="subject small-border body"><?php echo $to_mat?></div>
                                     <div class="subject small-border body"><?php echo $to_phy?></div>
                                     <div class="subject small-border body"><?php echo $to_che?></div>
                                     <div class="subject small-border body"><?php echo $to_bio?></div>
-                                    <div class="subject small-border body"><?php echo $to_mat?></div>
+                                    <div class="subject small-border body"><?php echo $to_agri?></div>
+                                    <div class="subject small-border body"><?php echo $to_ent?></div>
                                     <div class="subject small-border body"><?php echo $to_f_m?></div>
                                     <div class="subject small-border body"><?php echo $to_eco?></div>
-                                    <div class="subject small-border body"><?php echo $to_agri?></div>
-                                    <div class="subject small-border body"><?php echo $to_geo?></div>
-                                    <div class="subject small-border body"><?php echo $to_gov?></div>
                                     <div class="subject small-border body"><?php echo $to_com?></div>
                                     <div class="subject small-border body"><?php echo $to_civ?></div>
+                                    <div class="subject small-border body"><?php echo $to_geo?></div>
+                                    <div class="subject small-border body"><?php echo $to_rel?></div>
+                                    
                                     <div class="subject small-border body"><?php echo $total_score?></div>
 
                                     
@@ -373,9 +404,9 @@
                                 $to_rel = $row_two['to_rel'];
                                 $to_bus = $row_two['to_bus'];
 
-                                $to_lit = $row_two['to_lit'];
+                                $to_sos = $row_two['to_sos'];
                                 $to_cca = $row_two['to_cca'];
-                                $to_fre = $row_two['to_fre'];
+                                $to_kni = $row_two['to_kni'];
 
                                 $to_mat = $row_two['to_mat'];
                                 $to_b_s = $row_two['to_b_s'];
@@ -387,8 +418,13 @@
 
                                 $to_b_t = $row_two['to_b_t'];
                                 $to_com = $row_two['to_com'];
+
+                                $to_gam = $row_two['to_gam'];
+                                $to_a_c = $row_two['to_a_c'];
+                                $to_lan = $row_two['to_lan'];
+
+                                $to_woo = $row_two['to_woo'];
                                 $total_score = $row_two['total_score'];
-                                
                                 
 
                                 //$counter++;
@@ -400,20 +436,24 @@
                                     <div class="add_num small-border body"><?php echo $addmission_number; ?></div>
                                     <input type="hidden" name="addmission_num" value="<?php echo $addmission_number?>">
                                     
-                                    <div class="subject small-border body"><?php echo $to_eng?></div>
-                                    <div class="subject small-border body"><?php echo $to_rel?></div>
-                                    <div class="subject small-border body"><?php echo $to_bus?></div>
-                                    <div class="subject small-border body"><?php echo $to_lit?></div>
-                                    <div class="subject small-border body"><?php echo $to_cca?></div>
-                                    <div class="subject small-border body"><?php echo $to_fre?></div>
                                     <div class="subject small-border body"><?php echo $to_mat?></div>
+                                    <div class="subject small-border body"><?php echo $to_eng?></div>
                                     <div class="subject small-border body"><?php echo $to_b_s?></div>
-                                    <div class="subject small-border body"><?php echo $to_h_e?></div>
-                                    <div class="subject small-border body"><?php echo $to_agri?></div>
-                                    <div class="subject small-border body"><?php echo $to_civ?></div>
-                                    <div class="subject small-border body"><?php echo $to_phe?></div>
                                     <div class="subject small-border body"><?php echo $to_b_t?></div>
+                                    <div class="subject small-border body"><?php echo $to_sos?></div>
+                                    <div class="subject small-border body"><?php echo $to_civ?></div>
+                                    <div class="subject small-border body"><?php echo $to_agri?></div>
+                                    <div class="subject small-border body"><?php echo $to_h_e?></div>
+                                    <div class="subject small-border body"><?php echo $to_rel?></div>
+                                    <div class="subject small-border body"><?php echo $to_kni?></div>
                                     <div class="subject small-border body"><?php echo $to_com?></div>
+                                    <div class="subject small-border body"><?php echo $to_bus?></div>
+                                    <div class="subject small-border body"><?php echo $to_phe?></div>
+                                    <div class="subject small-border body"><?php echo $to_cca?></div>
+                                    <div class="subject small-border body"><?php echo $to_gam?></div>
+                                    <div class="subject small-border body"><?php echo $to_a_c?></div>
+                                    <div class="subject small-border body"><?php echo $to_lan?></div>
+                                    <div class="subject small-border body"><?php echo $to_woo?></div>
                                     <div class="subject small-border body"><?php echo $total_score?></div>
 
                                     

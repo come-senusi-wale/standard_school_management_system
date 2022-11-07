@@ -148,7 +148,7 @@ if (isset($_POST['submit'])) {
 
 
 
-        // sumbmit attendance through ajax................................
+        // sumbmit pin generation through ajax................................
 
         $('#submit').click(function(event){
 
@@ -157,7 +157,7 @@ if (isset($_POST['submit'])) {
         
             $.ajax({
 
-                url: 'action_php/multipurpose_action.php',
+                url: 'action_php/student_pin_action.php',
                 data: {action: 'student pin generation', addmission_num},
                 method: 'POST',
                 dataType: 'text',
@@ -166,6 +166,7 @@ if (isset($_POST['submit'])) {
 
                     $('#submit').val('generating.........');
                     $('#submit').attr('disabled', 'disabled');
+                    
                 },
 
                 success: function(data){

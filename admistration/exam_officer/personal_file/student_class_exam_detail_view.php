@@ -55,7 +55,7 @@
                     $array_two = array($class, 'exam', 'table');
                     $class_ca_table = implode('_', $array_two);
 
-                    $query_two = "SELECT * FROM $class_ca_table WHERE session = '$session' AND term = '$term'";
+                    $query_two = "SELECT * FROM $class_ca_table WHERE session = '$session' AND term = '$term' ORDER BY name";
 
                     $query_run_two = mysqli_query($conn, $query_two);
 
@@ -88,7 +88,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>class exam detail view</title>
+    <title>student class exam detail view</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/links_css.css">
@@ -179,19 +179,18 @@
                             <div class="name complete-border head"><p>name</p></div>
                             <div class="add_num complete-border head"><p>addmission No</p></div>
                             <div class="subject complete-border head"><p>eng</p></div>
-                            <div class="subject complete-border head"><p>rel</p></div>
-                            <div class="subject complete-border head"><p>ent</p></div>
+                            <div class="subject complete-border head"><p>mat</p></div>
                             <div class="subject complete-border head"><p>phy</p></div>
                             <div class="subject complete-border head"><p>che</p></div>
                             <div class="subject complete-border head"><p>bio</p></div>
-                            <div class="subject complete-border head"><p>mat</p></div>
+                            <div class="subject complete-border head"><p>agri</p></div>
+                            <div class="subject complete-border head"><p>ent</p></div>
                             <div class="subject complete-border head"><p>f/m</p></div>
                             <div class="subject complete-border head"><p>eco</p></div>
-                            <div class="subject complete-border head"><p>Agri</p></div>
-                            <div class="subject complete-border head"><p>geo</p></div>
-                            <div class="subject complete-border head"><p>gov</p></div>
                             <div class="subject complete-border head"><p>com</p></div>
                             <div class="subject complete-border head"><p>civ</p></div>
+                            <div class="subject complete-border head"><p>geo</p></div>
+                            <div class="subject complete-border head"><p>rel</p></div>
                             
                             <div class="subject complete-border head" class="action_btn" style="width: 60px;"><p>edit</p></div>
                             <div class="subject complete-border head" class="action_btn" style="width: 80px;"><p>delete</p></div>
@@ -207,20 +206,24 @@
                             <div class="num complete-border head"><p>#</p></div>
                             <div class="name complete-border head"><p>name</p></div>
                             <div class="add_num complete-border head"><p>addmission No</p></div>
-                            <div class="subject complete-border head"><p>eng</p></div>
-                            <div class="subject complete-border head"><p>rel</p></div>
-                            <div class="subject complete-border head"><p>bus</p></div>
-                            <div class="subject complete-border head"><p>lit</p></div>
-                            <div class="subject complete-border head"><p>CCA</p></div>
-                            <div class="subject complete-border head"><p>fre</p></div>
                             <div class="subject complete-border head"><p>mat</p></div>
-                            <div class="subject complete-border head"><p>B/S</p></div>
-                            <div class="subject complete-border head"><p>H/E</p></div>
-                            <div class="subject complete-border head"><p>Agri</p></div>
+                            <div class="subject complete-border head"><p>eng</p></div>
+                            <div class="subject complete-border head"><p>b/s</p></div>
+                            <div class="subject complete-border head"><p>b/t</p></div>
+                            <div class="subject complete-border head"><p>sos</p></div>
                             <div class="subject complete-border head"><p>civ</p></div>
-                            <div class="subject complete-border head"><p>PHE</p></div>
-                            <div class="subject complete-border head"><p>B/T</p></div>
-                            <div class="subject complete-border head"><p>Com</p></div>
+                            <div class="subject complete-border head"><p>agri</p></div>
+                            <div class="subject complete-border head"><p>h/e</p></div>
+                            <div class="subject complete-border head"><p>rel</p></div>
+                            <div class="subject complete-border head"><p>kni</p></div>
+                            <div class="subject complete-border head"><p>com</p></div>
+                            <div class="subject complete-border head"><p>bus</p></div>
+                            <div class="subject complete-border head"><p>phe</p></div>
+                            <div class="subject complete-border head"><p>cca</p></div>
+                            <div class="subject complete-border head"><p>gam</p></div>
+                            <div class="subject complete-border head"><p>a/c</p></div>
+                            <div class="subject complete-border head"><p>lan</p></div>
+                            <div class="subject complete-border head"><p>woo</p></div>
                             
                             <div class="subject complete-border head" class="action_btn" style="width: 60px;"><p>edit</p></div>
                             <div class="subject complete-border head" class="action_btn" style="width: 80px;"><p>delete</p></div>
@@ -259,9 +262,8 @@
 
                                 $agri = $row_two['agri'];
                                 $geo = $row_two['geo'];
-                                $gov = $row_two['gov'];
-
                                 $com = $row_two['com'];
+                                
                                 $civ = $row_two['civ'];
                                 
                                 
@@ -276,20 +278,18 @@
                                     <input type="hidden" name="addmission_num" value="<?php echo $addmission_number?>">
                                     <input type="hidden" name="name<?php echo $addmission_number?>" value="<?php echo $surname.' '.$first_name.' '.$other_name ?>">
                                     <div class="subject small-border body"><?php echo $eng?></div>
-                                    <div class="subject small-border body"><?php echo $rel?></div>
-                                    <div class="subject small-border body"><?php echo $ent?></div>
+                                    <div class="subject small-border body"><?php echo $mat?></div>
                                     <div class="subject small-border body"><?php echo $phy?></div>
                                     <div class="subject small-border body"><?php echo $che?></div>
                                     <div class="subject small-border body"><?php echo $bio?></div>
-                                    <div class="subject small-border body"><?php echo $mat?></div>
+                                    <div class="subject small-border body"><?php echo $agri?></div>
+                                    <div class="subject small-border body"><?php echo $ent?></div>
                                     <div class="subject small-border body"><?php echo $f_m?></div>
                                     <div class="subject small-border body"><?php echo $eco?></div>
-                                    <div class="subject small-border body"><?php echo $agri?></div>
-                                    <div class="subject small-border body"><?php echo $geo?></div>
-                                    <div class="subject small-border body"><?php echo $gov?></div>
                                     <div class="subject small-border body"><?php echo $com?></div>
                                     <div class="subject small-border body"><?php echo $civ?></div>
-
+                                    <div class="subject small-border body"><?php echo $geo?></div>
+                                    <div class="subject small-border body"><?php echo $rel?></div>
                                     
 
                                     <div class="subject small-border body" style="width: 60px; ">
@@ -331,9 +331,9 @@
                                 $rel = $row_two['rel'];
                                 $bus = $row_two['bus'];
 
-                                $lit = $row_two['lit'];
+                                $sos = $row_two['sos'];
                                 $cca = $row_two['cca'];
-                                $fre = $row_two['fre'];
+                                $kni = $row_two['kni'];
 
                                 $mat = $row_two['mat'];
                                 $b_s = $row_two['b_s'];
@@ -345,7 +345,11 @@
 
                                 $b_t = $row_two['b_t'];
                                 $com = $row_two['com'];
-                                
+                                $gam = $row_two['gam'];
+
+                                $a_c = $row_two['a_c'];
+                                $lan = $row_two['lan'];
+                                $woo = $row_two['woo'];
                                 
 
                                 $counter++;
@@ -358,20 +362,24 @@
                                     <div class="add_num small-border body"><?php echo $addmission_number; ?></div>
                                     <input type="hidden" name="addmission_num" value="<?php echo $addmission_number?>">
                                     <input type="hidden" name="name<?php echo $addmission_number?>" value="<?php echo $surname.' '.$first_name.' '.$other_name ?>">
-                                    <div class="subject small-border body"><?php echo $eng?></div>
-                                    <div class="subject small-border body"><?php echo $rel?></div>
-                                    <div class="subject small-border body"><?php echo $bus?></div>
-                                    <div class="subject small-border body"><?php echo $lit?></div>
-                                    <div class="subject small-border body"><?php echo $cca?></div>
-                                    <div class="subject small-border body"><?php echo $fre?></div>
                                     <div class="subject small-border body"><?php echo $mat?></div>
+                                    <div class="subject small-border body"><?php echo $eng?></div>
                                     <div class="subject small-border body"><?php echo $b_s?></div>
-                                    <div class="subject small-border body"><?php echo $h_e?></div>
-                                    <div class="subject small-border body"><?php echo $agri?></div>
-                                    <div class="subject small-border body"><?php echo $civ?></div>
-                                    <div class="subject small-border body"><?php echo $phe?></div>
                                     <div class="subject small-border body"><?php echo $b_t?></div>
+                                    <div class="subject small-border body"><?php echo $sos?></div>
+                                    <div class="subject small-border body"><?php echo $civ?></div>
+                                    <div class="subject small-border body"><?php echo $agri?></div>
+                                    <div class="subject small-border body"><?php echo $h_e?></div>
+                                    <div class="subject small-border body"><?php echo $rel?></div>
+                                    <div class="subject small-border body"><?php echo $kni?></div>
                                     <div class="subject small-border body"><?php echo $com?></div>
+                                    <div class="subject small-border body"><?php echo $bus?></div>
+                                    <div class="subject small-border body"><?php echo $phe?></div>
+                                    <div class="subject small-border body"><?php echo $cca?></div>
+                                    <div class="subject small-border body"><?php echo $gam?></div>
+                                    <div class="subject small-border body"><?php echo $a_c?></div>
+                                    <div class="subject small-border body"><?php echo $lan?></div>
+                                    <div class="subject small-border body"><?php echo $woo?></div>
 
                                     
 

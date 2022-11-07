@@ -742,7 +742,7 @@ if (isset($_POST['action'])) {
 
 
 
-     // approving school withdrawal transaction?????????????????????
+     // approving student school withdrawal transaction?????????????????????
 
      if ($_POST['action'] == 'appove withdraw transaction') {
           
@@ -759,6 +759,29 @@ if (isset($_POST['action'])) {
 
           echo $output;
      }
+
+
+
+
+     
+     // approving pupils school withdrawal transaction?????????????????????
+
+     if ($_POST['action'] == 'appove pupil school withdraw transaction') {
+          
+          $id = mysqli_real_escape_string($conn, $_POST['id']);
+
+          $query = "UPDATE pupil_school_withdraw_transaction_table SET status = 'approved' WHERE id = '$id'";
+          $query_run = mysqli_query($conn, $query);
+
+          if ($query_run) {
+               $output = 'approved';
+          }else {
+               $output = 'error';
+          }
+
+          echo $output;
+     }
+
 
 
 

@@ -55,7 +55,7 @@
                     $array_two = array($class, $term, 'term', 'ca', 'table');
                     $class_ca_table = implode('_', $array_two);
 
-                    $query_two = "SELECT * FROM $class_ca_table WHERE session = '$session' AND ca = '$ca'";
+                    $query_two = "SELECT * FROM $class_ca_table WHERE session = '$session' AND ca = '$ca' ORDER BY name";
 
                     $query_run_two = mysqli_query($conn, $query_two);
 

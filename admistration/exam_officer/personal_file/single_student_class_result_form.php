@@ -94,7 +94,7 @@
                         <label for="category">category</label>
                         <select name="category" id="term" class="class_category">
                             <option value="">category</option>
-                            <option value="jenior">jss</option>
+                            <option value="junior">jss</option>
                             <option value="senior">sss</option>
                         </select>
                     </div>

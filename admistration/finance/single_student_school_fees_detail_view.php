@@ -74,7 +74,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>school fees payment form</title>
+    <title>single student school fees details view</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/links_css.css">
@@ -154,7 +154,7 @@
 
                     <div class="form_input">
                         <label for="session">academy session</label>
-                        <input type="text" readonly value="2022/2323">
+                        <input type="text" readonly value="<?php echo $session ?>">
                        
                     </div>
 
@@ -223,7 +223,7 @@
             </div>
 
             <div class="submit">
-                <a href="single_student_transaction_detail_view.php?id=<?php echo $id ?>&addmission_num=<?php echo $addmission_num ?>&class=<?php echo $class ?>&term=<?php echo $term ?>&session=<?php echo $session ?>">view detail</a>
+                <a href="single_student_transaction_detail_view.php?id=<?php echo $id ?>&addmission_num=<?php echo $addmission_num ?>&class=<?php echo $class ?>&term=<?php echo $term ?>&session=<?php echo $session ?>&name=<?php echo $name ?>">view detail</a>
             </div>
 
 

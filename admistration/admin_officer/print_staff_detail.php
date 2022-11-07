@@ -43,7 +43,7 @@
     }
 
 
-    $document->getOptions()->setChroot('image');
+    $document->getOptions()->setChroot('../../image/staff/');
 
         $output = '<!DOCTYPE html>
         <html lang="en">
@@ -160,20 +160,77 @@
                     letter-spacing: 1px;
                     text-transform: capitalize;
                 }
+
+                .logo table tr td img{
+                    width: 100px;
+                    height: 100px;
+                }
+    
+                .logo table, .logo table tr {
+                    width: 100%;
+                }
+    
+                .logo table tr .log{
+                    width: 20%;
+                }
+    
+                .logo table tr .tex{
+                    width: 55%;
+                }
+    
+                .logo table tr .tex div{
+                    text-align: center;
+                    text-transform: upperCase;
+                }
+    
+                .logo table tr .tex div h3{
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: #444;
+                    margin-bottom: 5px;
+                }
+    
+                .logo table tr .tex div h2{
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #444;
+                    margin-bottom: 5px;
+                }
+    
+                .logo table tr .tex div p{
+                    font-size: 12px;
+                   
+                }
             </style>
         </head>
         <body>
 
             <section id="view_contaner">
+
+                    <div class="logo">
+                        <table>
+                            <tr>
+                                <td class="log"><img src="../../image/staff/logo.jpg" alt=""></td>
+                                <td class="tex">
+                                    <div>
+                                        <h3>spring of grace group of schools</h3>
+                                        <h2>spring of grace high school</h2>
+                                        <p>ankpa - anyigba express way, ejegbo by pass, ankpa, kogi state</p>
+                                    </div>
+                                </td>
+                                <td class="log"><img src="../../image/staff/church.jpg" alt=""></td>
+                            </tr>
+                        </table>
+                    </div>
                 <div class="header">
-                    <h2>staff details</h2>
+                    <h2>staff bio-data</h2>
                 </div>
                 
 
                 <section id="view_image">
 
                     <div class="image">
-                        <img src="image/'.$image.'" alt="">
+                        <img src="../../image/staff/'.$image.'" alt="">
                     </div>
 
                     <div class="item">

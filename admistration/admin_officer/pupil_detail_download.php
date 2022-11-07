@@ -247,7 +247,7 @@
                             <div>
                                 <h3>spring of grace group of schools</h3>
                                 <h2>spring of grace nursery & primary school</h2>
-                                <p>ankpa - anyigba express way, opulega, ankpa, kogi state</p>
+                                <p>ankpa - anyigba express way, ejegbo by pass, ankpa, kogi state</p>
                             </div>
                         </td>
                         <td class="log"><img src="../../image/pupil/church.JPG" alt=""></td>

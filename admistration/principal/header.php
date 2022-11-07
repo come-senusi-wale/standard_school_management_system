@@ -216,7 +216,7 @@ if (!isset($_SESSION['principal_id_code'])) {
 
 
                 <div class="home">
-                    <a href="principal_home.php"><img src="../../image/about.jpg" alt=""></a>
+                    <a href="principal_home.php"><img src="../../image/school/logo.jpg" alt=""></a>
                 </div>
                 
                 <div id="btn_group">
@@ -258,33 +258,26 @@ if (!isset($_SESSION['principal_id_code'])) {
                         </div>
                     </div>
 
-                    <div class="btn-group">
-                        <button type="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">staff
-                        </button>
-                        <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">status</a>
-                        <a class="dropdown-item" href="action_php/director_logout_action.php">attendance</a>
-                        </div>
-                    </div>
-
+                    
 
                     <div class="btn-group">
-                        <button type="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">student
-                        </button>
-                        <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">status</a>
-                        <a class="dropdown-item" href="action_php/director_logout_action.php">payment</a>
-                        <a class="dropdown-item" href="action_php/director_logout_action.php">attendance</a>
-                        </div>
-                    </div>
-
-                    <div class="btn-group">
-                        <button type="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">finance
+                        <button type="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">s-finance
                         </button>
                         <div class="dropdown-menu">
                         <a class="dropdown-item" href="deposit_details_form.php">deposit details</a>
                         <a class="dropdown-item" href="withdraw_details_form.php">withdrawal details</a>
                         <a class="dropdown-item" href="school_fees_details_form.php">school fees detail</a>
+                        </div>
+                    </div>
+
+
+                    <div class="btn-group">
+                        <button type="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">p-finance
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="pupil_deposit_details_form.php">deposit details</a>
+                        <a class="dropdown-item" href="pupil_withdraw_details_form.php">withdrawal details</a>
+                        <a class="dropdown-item" href="pupil_school_fees_details_form.php">school fees detail</a>
                         </div>
                     </div>
 

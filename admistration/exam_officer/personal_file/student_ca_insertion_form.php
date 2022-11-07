@@ -37,7 +37,7 @@
                 $array = array($class, $term, 'term', 'table');
                 $class_table = implode('_', $array);
 
-                $query = "SELECT * FROM $class_table WHERE academic_session = '$session'";
+                $query = "SELECT * FROM $class_table WHERE academic_session = '$session' ORDER BY surname";
 
                 $query_run =mysqli_query($conn, $query);
 

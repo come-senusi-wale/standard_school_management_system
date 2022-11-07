@@ -26,7 +26,7 @@
     $array = array($class, $term, 'term', 'table');
     $class_table = implode('_', $array);
 
-    $query = "SELECT * FROM $class_table WHERE academic_session = '$session'";
+    $query = "SELECT * FROM $class_table WHERE academic_session = '$session' ORDER BY surname";
     $query_run = mysqli_query($conn, $query);
 
     $num = mysqli_num_rows($query_run);
@@ -171,7 +171,7 @@
                                     <div>
                                         <h3>spring of grace group of schools</h3>
                                         <h2>spring of grace high school</h2>
-                                        <p>ankpa - anyigba express way, opulega, ankpa, kogi state</p>
+                                        <p>ankpa - anyigba express way, ejegbo by pass, ankpa, kogi state</p>
                                     </div>
                                 </td>
                                 <td class="log"><img src="../../image/school/church.jpg" alt=""></td>
@@ -185,7 +185,7 @@
                     <table>
                         <thead>
                             <tr>
-                                <td>#</td>
+                                <td>S/N</td>
                                 <td>addmission no</td>
                                 <td>surname</td>
                                 <td>first name</td>

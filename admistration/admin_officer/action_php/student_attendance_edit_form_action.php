@@ -31,7 +31,7 @@
 
                 $array = array($class, $term, 'term', 'table');
                 $class_table = implode('_', $array);
-
+            
                 $query_tree = "SELECT * FROM $class_table WHERE academic_session = '$session' AND term = '$term'";
                 $query_run_tree = mysqli_query($conn, $query_tree);
 

@@ -50,7 +50,7 @@
 
     
 
-    $document->getOptions()->setChroot('../../../../image');
+    $document->getOptions()->setChroot('../../../../image/school/');
 
     
 
@@ -146,11 +146,11 @@ $output = '<!DOCTYPE html>
 
     
     <div id="img_logo_container">     
-          <img src="../../../../image/about.jpg" alt="">
+          <img src="../../../../image/school/logo.jpg" alt="">
     </div>
 
     <div id="school_name">
-        <h2>aleka academy ankpa</h2>
+        <h2>spring of grace high school</h2>
     </div>
     
     <section id="profile">

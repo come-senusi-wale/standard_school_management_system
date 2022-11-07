@@ -118,9 +118,31 @@
                         <div class="form_input">
                             <label for="class">class</label>
                             <select name="class" id="class">
-                                <option value="js1">Js1</option>
-                                <option value="js2">Js2</option>
-                                <option value="js3">Js3</option>
+                                <option value="">class</option>
+                                <?php
+
+                                    $query_two = "SELECT * FROM class_category_table" ;
+                                    $query_run_two = mysqli_query($conn, $query_two);
+
+                                    $num_two = mysqli_num_rows($query_run_two);
+
+                                    if ($num_two > 0) {
+                                        
+                                        while ($row_two = mysqli_fetch_array($query_run_two)) {
+                                            
+                                            $class = $row_two['class'];
+                                            
+
+                                            ?>
+
+                                                <option value="<?php echo $class ?>"><?php echo $class ?></option>
+                                            
+                                            <?php
+                                        }
+                                        
+                                    }
+                               
+                               ?>
                             </select>
                         </div>
 

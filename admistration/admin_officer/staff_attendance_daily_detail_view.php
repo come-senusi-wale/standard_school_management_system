@@ -8,7 +8,7 @@
 
     include('action_php/database.php');
 
-    $limit = 2;
+    $limit = 50;
 
     if (isset($_GET['page'])) {
         
@@ -130,7 +130,7 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>#</th>
+                            <th>S/N</th>
                             <th>name</th>
                             <th>email</th>
                             <th>date</th>

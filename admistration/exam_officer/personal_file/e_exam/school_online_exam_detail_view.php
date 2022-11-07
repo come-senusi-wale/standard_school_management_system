@@ -59,7 +59,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>school online exam detail</title>
+        <title>student school online exam detail</title>
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="../../css/links_css.css">
@@ -81,7 +81,7 @@
 
         <section id="reg_section">
         <div class="reg_header">
-            <h2>school online exam detail</h2>
+            <h2>student school online exam detail</h2>
             <p id="error" style="color: red;"></p>
             <h2>academic session: <?php echo $session ?></h2>
         </div>

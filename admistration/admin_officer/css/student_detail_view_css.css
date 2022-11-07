@@ -1,5 +1,5 @@
 #veiw_container{
-    margin-top: 100px;
+    margin-top: 150px;
     display: grid;
     grid-template-columns: 30% auto;
     grid-column-gap: 5px;

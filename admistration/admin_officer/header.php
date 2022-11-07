@@ -1,10 +1,14 @@
 <?php
 
+    session_start();
 
-if (!isset($_SESSION['admin_id_code'])) {
-    
-    header("location: admin_officer_login.php");
-}
+    if (!isset($_SESSION['admin_id_code'])) {
+            
+        header("location: admin_officer_login.php");
+    }
+
+
+
 
 
 ?>
@@ -149,6 +153,7 @@ if (!isset($_SESSION['admin_id_code'])) {
                         <div class="dropdown-menu">
                         <a class="dropdown-item" href="school_class_registration_form.php"> school class registration</a>
                         <a class="dropdown-item" href="school_subject_registration_form.php">school subject registration</a>
+                        <a class="dropdown-item" href="school_classes_view_form.php">view classes</a>
                         </div>
                     </div>
 
@@ -220,13 +225,43 @@ if (!isset($_SESSION['admin_id_code'])) {
 
 
                     <div class="btn-group">
-                        <button type="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">student attendance
+                        <button type="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">s-att
                         </button>
                         <div class="dropdown-menu">
                         <a class="dropdown-item" href="student_attendance_creation_form.php">create attendance</a>
                         <a class="dropdown-item" href="student_attendance_creation_detail_form.php">attendance detail</a>
                         </div>
                     </div>
+
+
+                    <div class="btn-group">
+                        <button type="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">p-att
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="pupil_attendance_creation_form.php">create attendance</a>
+                        <a class="dropdown-item" href="pupil_attendance_creation_detail_form.php">attendance detail</a>
+                        <a class="dropdown-item" href="pupil_attendance_termly_detail_form.php">termly daitail</a>
+                        <a class="dropdown-item" href="pupil_attendance_daily_detail_form.php">daily detail</a>
+                        </div>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">news
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="create_news_form.php">create news</a>
+                        <a class="dropdown-item" href="news_details_form.php">news detail</a>
+                        </div>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">messages
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="view_message.php">view messages</a>
+                        </div>
+                    </div>
+
 
                     <div class="btn-group">
                     <a href="action_php/admin_officer_logout_action.php" class="logout">logout</a>

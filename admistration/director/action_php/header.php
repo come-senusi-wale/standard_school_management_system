@@ -15,7 +15,7 @@ if(!isset($_SESSION['director_id_code']))
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>director page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="../../javascript/jquery.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -160,7 +160,7 @@ form p {
 
 
             <div class="home">
-                <a href="director_home.php"><img src="../../image/about.jpg" alt="come"></a>
+                <a href="director_home.php"><img src="../../image/school/logo.jpg" alt="logo"></a>
             </div>
             
             <div id="btn_group">
@@ -179,7 +179,7 @@ form p {
                     <button type="button" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"> others
                     </button>
                     <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">profile</a>
+                    
                     <a class="dropdown-item" href="action_php/director_logout_action.php">logout</a>
                     </div>
                 </div>

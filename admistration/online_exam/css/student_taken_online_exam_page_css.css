@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eef0ef;
+}
+
+/* styling header ??????????????????????? */
+
+header{
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+    justify-content: space-between;
+    background-color: #5fcf80;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+}
+
+#logo #img{
+    width: 100%;
+    height: 100%;
+}
+
+#logo #img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+#school_name{
+    height: 50px;
+}
+
+
+#school_name h2{
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 50px;
+    font-family: sans-serif;
+}
+
+
+/* styling body */
+
+
+#exam_body{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#question_body{
+    width: 65%;
+}
+
+#question_container{
+    width: 100%;
+    border: 1px solid #fff;
+}
+
+#exam_title{
+    border-bottom: 1px solid #fff;
+    padding: 10px 20px;
+    background-color: #5fcf80;
+}
+
+#exam_title h3{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+#question{
+    padding: 0 20px;
+    
+}
+
+#question h4{
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #777;
+    border-bottom: 1px solid #fff;
+    padding: 30px 0;
+}
+
+#option{
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 40px;
+}
+
+#option .option_btn{
+
+    font-size: 25px;
+    color: #777;
+}
+
+#option .option_btn input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+
+#change_btn{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#change_btn button{
+    margin:  10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    text-transform: capitalize;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+#change_btn button:hover{
+    opacity: 0.6;
+}
+
+#change_btn #prev_btn{
+    background-color: #5fcf80;
+}
+
+#change_btn #next_btn{
+    background-color: blue;
+}
+
+#number_btn{
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+#number_btn button{
+    padding: 5px 8px;
+    font-size: 17px;
+    color: #fff;
+    border: none;
+    margin: 0 5px;
+}
+
+#number_btn button:hover{
+    opacity: 0.6;
+}
+
+.select{
+    background-color: blue;
+}
+
+.not_select{
+    background-color: red;
+}
+
+
+
+
+
+
+#profile_body{
+    width: 30%;
+}
+
+
+#instruction div{
+    margin-bottom: 20px;
+}
+
+#instruction div p{
+    text-transform: capitalize;
+    color: #777;
+    font-size: 20px;
+}
+
+#instruction #timer p span{
+    font-size: 35px;
+    color: #444;
+}
+
+ .img{
+    height: 140px;
+    width: 140px;
+    
+}
+
+ .img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#profile_container{
+    border: 1px solid #fff;
+    margin-top: 20px;
+
+}
+
+#user{
+    border-bottom: 1px solid #fff;
+    padding: 10px 20px;
+    background-color: #5fcf80;
+}
+
+#user h3{
+    color: #fff;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+
+#info{
+   padding: 20px 10px; 
+}
+
+#info table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#info table, #info table tr, #info table tr td{
+    border: 1px solid #fff;
+}
+
+#info table tr td{
+    padding: 5px 10px;
+    text-transform: capitalize;
+    color: #777;
+    font-size: 18px;
+}

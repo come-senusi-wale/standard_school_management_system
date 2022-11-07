@@ -174,7 +174,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>deposit amount enter form</title>
+    <title>secondary deposit amount enter form</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/links_css.css">
@@ -208,12 +208,12 @@
         <section class="transaction_body">
 
             <section class="left_transaction">
-                <div class="tranc_exp"><span> expected amount</span></div>
+                <div class="tranc_exp"><span> expected amount from student</span></div>
                 <div class="tranc_val"><span> ₦<?php echo $amount_expected; ?>.00</span></div>
             </section>
 
             <section class="right_transaction">
-                <div class="tranc_exp"><span>amount generated</span></div>
+                <div class="tranc_exp"><span>amount generated from student</span></div>
                 <div class="tranc_val"><span> ₦<?php echo $amount_generated ?>.00</span></div>
             </section>
         </section>
@@ -222,12 +222,12 @@
         <section class="transaction_body">
 
             <section class="left_transaction">
-                <div class="tranc_exp"><span> amount deposited</span></div>
+                <div class="tranc_exp"><span> amount deposited by finance clerk</span></div>
                 <div class="tranc_val"><span> ₦<?php echo $amount_deposited; ?>.00</span></div>
             </section>
 
             <section class="right_transaction">
-                <div class="tranc_exp"><span>amount withdrawed</span></div>
+                <div class="tranc_exp"><span>amount withdrawed by finance clerk</span></div>
                 <div class="tranc_val"><span> ₦<?php echo $amount_withdraw; ?>.00</span></div>
             </section>
         </section>

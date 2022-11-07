@@ -65,7 +65,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>general exam performance details view</title>
+    <title>student general exam performance details view</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/links_css.css">
@@ -191,23 +191,23 @@
                         <div id="header">
 
                             <div id="heeder_content">
-                                <div class="num complete-border head"><p>#</p></div>
+                            <div class="num complete-border head"><p>#</p></div>
                                 <div class="name complete-border head"><p>name</p></div>
                                 <div class="add_num complete-border head"><p>addmission No</p></div>
                                 <div class="subject complete-border head"><p>eng</p></div>
-                                <div class="subject complete-border head"><p>rel</p></div>
-                                <div class="subject complete-border head"><p>ent</p></div>
-                                <div class="subject complete-border head"><p>phy</p></div>
-                                <div class="subject complete-border head"><p>che</p></div>
-                                <div class="subject complete-border head"><p>bio</p></div>
                                 <div class="subject complete-border head"><p>mat</p></div>
+                                <div class="subject complete-border head"><p>pyh/comm</p></div>
+                                <div class="subject complete-border head"><p>che/gov</p></div>
+                                <div class="subject complete-border head"><p>bio</p></div>
+                                <div class="subject complete-border head"><p>agri</p></div>
+                                <div class="subject complete-border head"><p>ent</p></div>
                                 <div class="subject complete-border head"><p>f/m</p></div>
                                 <div class="subject complete-border head"><p>eco</p></div>
-                                <div class="subject complete-border head"><p>agri</p></div>
-                                <div class="subject complete-border head"><p>geo</p></div>
-                                <div class="subject complete-border head"><p>gov</p></div>
                                 <div class="subject complete-border head"><p>com</p></div>
                                 <div class="subject complete-border head"><p>civ</p></div>
+                                <div class="subject complete-border head"><p>geo/lit</p></div>
+                                <div class="subject complete-border head"><p>rel</p></div>
+                               
                                 <div class="subject complete-border head"><p>tol</p></div>
                                 <div class="subject complete-border head"><p>avg</p></div>
                                 <div class="subject complete-border head" class="action_btn" style="width: 80px;"><p>status</p></div>
@@ -229,23 +229,27 @@
                         <div id="header">
 
                             <div id="heeder_content">
-                                <div class="num complete-border head"><p>#</p></div>
+                            <div class="num complete-border head"><p>#</p></div>
                                 <div class="name complete-border head"><p>name</p></div>
                                 <div class="add_num complete-border head"><p>addmission No</p></div>
-                                <div class="subject complete-border head"><p>eng</p></div>
-                                <div class="subject complete-border head"><p>rel</p></div>
-                                <div class="subject complete-border head"><p>bus</p></div>
-                                <div class="subject complete-border head"><p>lit</p></div>
-                                <div class="subject complete-border head"><p>Cca</p></div>
-                                <div class="subject complete-border head"><p>fre</p></div>
                                 <div class="subject complete-border head"><p>mat</p></div>
+                                <div class="subject complete-border head"><p>eng</p></div>
                                 <div class="subject complete-border head"><p>b/s</p></div>
-                                <div class="subject complete-border head"><p>h/e</p></div>
-                                <div class="subject complete-border head"><p>agri</p></div>
-                                <div class="subject complete-border head"><p>phe</p></div>
                                 <div class="subject complete-border head"><p>b/t</p></div>
+                                <div class="subject complete-border head"><p>sos</p></div>
                                 <div class="subject complete-border head"><p>civ</p></div>
+                                <div class="subject complete-border head"><p>agri</p></div>
+                                <div class="subject complete-border head"><p>h/e</p></div>
+                                <div class="subject complete-border head"><p>rel</p></div>
+                                <div class="subject complete-border head"><p>kni</p></div>
                                 <div class="subject complete-border head"><p>com</p></div>
+                                <div class="subject complete-border head"><p>bus</p></div>
+                                <div class="subject complete-border head"><p>phe</p></div>
+                                <div class="subject complete-border head"><p>cca</p></div>
+                                <div class="subject complete-border head"><p>gam</p></div>
+                                <div class="subject complete-border head"><p>a/c</p></div>
+                                <div class="subject complete-border head"><p>lan</p></div>
+                                <div class="subject complete-border head"><p>woo</p></div>
                                 <div class="subject complete-border head"><p>tol</p></div>
                                 <div class="subject complete-border head"><p>avg</p></div>
                                 <div class="subject complete-border head" class="action_btn" style="width: 80px;"><p>status</p></div>
@@ -291,16 +295,16 @@
                                 $eco = $row['eco'];
                                 $agri = $row['agri'];
                                 $geo = $row['geo'];
-                                $gov = $row['gov'];
+                               
                                 $com = $row['com'];
                                 
                                 $civ = $row['civ'];
                                 
                                 $status = $row['status'];
 
-                                $total = $eng + $rel + $ent + $phy + $che + $bio + $mat + $f_m + $eco + $agri + $geo + $gov + $civ + $com;
+                                $total = $eng + $rel + $ent + $phy + $che + $bio + $mat + $f_m + $eco + $agri + $geo + $civ + $com;
 
-                                $avg = round((($eng + $rel + $ent + $phy + $che + $bio + $mat + $f_m + $eco + $agri + $geo + $gov + $civ + $com)/980) * 100, 2);
+                                $avg = round((($eng + $rel + $ent + $phy + $che + $bio + $mat + $f_m + $eco + $agri + $geo  + $civ + $com)/910) * 100, 2);
 
                                 $counter++;
                                     ?>
@@ -310,19 +314,18 @@
                                     <div class="name small-border body"><?php echo $name ?></div>
                                     <div class="add_num small-border body"><?php echo $addmission_number; ?></div>
                                     <div class="subject small-border body"><?php echo $eng ?></div>
-                                    <div class="subject small-border body"><?php echo $rel ?></div>
-                                    <div class="subject small-border body"><?php echo $ent ?></div>
+                                    <div class="subject small-border body"><?php echo $mat ?></div>
                                     <div class="subject small-border body"><?php echo $phy ?></div>
                                     <div class="subject small-border body"><?php echo $che ?></div>
                                     <div class="subject small-border body"><?php echo $bio ?></div>
-                                    <div class="subject small-border body"><?php echo $mat ?></div>
+                                    <div class="subject small-border body"><?php echo $agri ?></div>
+                                    <div class="subject small-border body"><?php echo $ent ?></div>
                                     <div class="subject small-border body"><?php echo $f_m ?></div>
                                     <div class="subject small-border body"><?php echo $eco ?></div>
-                                    <div class="subject small-border body"><?php echo $agri ?></div>
-                                    <div class="subject small-border body"><?php echo $geo ?></div>
-                                    <div class="subject small-border body"><?php echo $gov ?></div>
                                     <div class="subject small-border body"><?php echo $com ?></div>
                                     <div class="subject small-border body"><?php echo $civ ?></div>
+                                    <div class="subject small-border body"><?php echo $geo ?></div>
+                                    <div class="subject small-border body"><?php echo $rel ?></div>
                                     <div class="subject small-border body"><?php echo $total ?></div>
                                     <div class="subject small-border body"><?php echo $avg ?></div>
 
@@ -387,27 +390,31 @@
 
                                 $eng = $row['eng'];
                                 $rel = $row['rel'];
-                                $lit = $row['lit'];
+                                $sos = $row['sos'];
                                 $bus = $row['bus'];
-
+        
                                 $cca = $row['cca'];
-                                $fre = $row['fre'];
+                                $kni = $row['kni'];
                                 $mat = $row['mat'];
                                 $b_s = $row['b_s'];
-
+        
                                 $h_e = $row['h_e'];
                                 $agri = $row['agri'];
                                 $phe = $row['phe'];
                                 $b_t = $row['b_t'];
                                 $civ = $row['civ'];
-                                
                                 $com = $row['com'];
+
+                                $gam = $row['gam'];
+                                $a_c = $row['a_c'];
+                                $lan = $row['lan'];
+                                $woo = $row['woo'];
                                 
                                 $status = $row['status'];
 
-                                $total = $eng + $rel + $bus + $rel + $cca + $fre + $mat + $b_s + $h_e + $agri + $phe + $b_t + $civ + $com;
+                                $total = $eng + $rel + $bus + $sos + $cca + $kni + $mat + $b_s + $h_e + $agri + $phe + $b_t + $civ + $com + $gam + $a_c + $lan + $woo;
 
-                                $avg = round((($eng + $rel + $bus + $rel + $cca + $fre + $mat + $b_s + $h_e + $agri + $phe + $b_t + $civ + $com)/980) * 100, 2);
+                                $avg = round((($eng + $rel + $bus + $sos + $cca + $kni + $mat + $b_s + $h_e + $agri + $phe + $b_t + $civ + $com + $gam + $a_c + $lan + $woo)/1260) * 100, 2);
 
                                 $counter++;
                                     ?>
@@ -416,20 +423,24 @@
                                     <div class="num half-border body"><?php echo $counter ?></div>
                                     <div class="name small-border body"><?php echo $name ?></div>
                                     <div class="add_num small-border body"><?php echo $addmission_number; ?></div>
-                                    <div class="subject small-border body"><?php echo $eng ?></div>
-                                    <div class="subject small-border body"><?php echo $rel ?></div>
-                                    <div class="subject small-border body"><?php echo $bus ?></div>
-                                    <div class="subject small-border body"><?php echo $lit ?></div>
-                                    <div class="subject small-border body"><?php echo $cca ?></div>
-                                    <div class="subject small-border body"><?php echo $fre ?></div>
                                     <div class="subject small-border body"><?php echo $mat ?></div>
+                                    <div class="subject small-border body"><?php echo $eng ?></div>
                                     <div class="subject small-border body"><?php echo $b_s ?></div>
-                                    <div class="subject small-border body"><?php echo $h_e ?></div>
-                                    <div class="subject small-border body"><?php echo $agri ?></div>
-                                    <div class="subject small-border body"><?php echo $phe ?></div>
                                     <div class="subject small-border body"><?php echo $b_t ?></div>
+                                    <div class="subject small-border body"><?php echo $sos ?></div>
                                     <div class="subject small-border body"><?php echo $civ ?></div>
+                                    <div class="subject small-border body"><?php echo $agri ?></div>
+                                    <div class="subject small-border body"><?php echo $h_e ?></div>
+                                    <div class="subject small-border body"><?php echo $rel ?></div>
+                                    <div class="subject small-border body"><?php echo $kni ?></div>
                                     <div class="subject small-border body"><?php echo $com ?></div>
+                                    <div class="subject small-border body"><?php echo $bus ?></div>
+                                    <div class="subject small-border body"><?php echo $phe ?></div>
+                                    <div class="subject small-border body"><?php echo $cca ?></div>
+                                    <div class="subject small-border body"><?php echo $gam ?></div>
+                                    <div class="subject small-border body"><?php echo $a_c ?></div>
+                                    <div class="subject small-border body"><?php echo $lan ?></div>
+                                    <div class="subject small-border body"><?php echo $woo ?></div>
                                     <div class="subject small-border body"><?php echo $total ?></div>
                                     <div class="subject small-border body"><?php echo $avg ?></div>
 

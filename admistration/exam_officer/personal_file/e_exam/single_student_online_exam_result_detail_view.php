@@ -130,6 +130,9 @@
 
                         if ($num < 1) {
                             
+                            ?>
+                            <td colspan="9">no result</td>
+                            <?php
 
                         }else{
 
@@ -236,6 +239,11 @@
 
                     -->
 
+                    <?php
+                        
+                    if ($num > 0) {
+                        ?>
+
                         <tr>
                             <td colspan="2"></td>
                             <td colspan="3"></td>
@@ -271,6 +279,12 @@
                             <td colspan="3"><?php echo $mark ?></td>
                             
                         </tr>
+
+                        <?php
+                            
+                        }
+                        
+                        ?>
                    
                     </tbody>
                 </table>
@@ -279,7 +293,17 @@
         </div>
 
         <div id="print">
+            
+           <?php
+
+           if ($num > 0) {
+            ?>
             <a href="single_student_online_exam_result_print.php?term=<?php echo $term ?>&exam_id=<?php echo $exam_id ?>&session=<?php echo $session ?>&class=<?php echo $class ?>&addmission_num=<?php echo $addmission_num ?>">print</a>
+
+            <?php
+           }
+           
+           ?>
         </div>
     </section>
 

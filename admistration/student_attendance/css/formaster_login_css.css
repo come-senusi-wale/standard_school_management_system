@@ -1,0 +1,97 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eef0ef;
+}
+
+#form_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    
+    
+}
+
+.form_element{
+    background-color: #fff;
+    padding: 40px 20px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+form h2{
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 60;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #5fcf80;
+    text-align: center;
+}
+
+input{
+    display: block;
+}
+
+#pwd, #email, #id_code{
+    margin-bottom: 40px;
+    border: none;
+    line-height: 25px;
+    border-bottom: 1px solid #444444;
+    width: 100%;
+}
+
+#reg_btn{
+    width: 100%;
+    text-align: center;
+    border: none;
+    background-color: #5fcf80;
+    padding: 10px 0;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#pwd:focus, #email:focus{
+    outline: none;
+    border-bottom: 1px solid #5fcf80;
+}
+
+
+/* styling forgot password */
+
+#forgot{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#forgot a{
+    text-transform: capitalize;
+    text-align: center;
+    color: #5fcf80;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+
+/* styling error hanler page */
+
+.error{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.error #error{
+    color: tomato;
+    letter-spacing: 1px;
+}

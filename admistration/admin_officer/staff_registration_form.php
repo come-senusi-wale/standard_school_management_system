@@ -116,6 +116,15 @@ if (isset($_GET['correct'])) {
             </div>
 
 
+            <div class="two">
+
+                <div class="form_input">
+                    <label for="cv">upload CV</label>
+                    <input type="file" name="cv" id="cv">
+                </div>
+
+            </div>
+
         </div>
 
 

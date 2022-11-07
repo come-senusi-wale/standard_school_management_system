@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #eef0ef;
+}
+
+#school_name{
+    text-align: center;
+    margin-top: 20px;
+    text-transform: capitalize;
+    color: #5fcf80;
+}
+
+#exam_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+#exam_container ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#exam_container ul li button{
+    font-size: 20px;
+    padding: 5px;
+    background-color: #fff;
+    color: #777;
+    border: 1px solid #444;
+    border-radius: 10px;
+}
+
+#exam_container ul li button:hover{
+    opacity: 0.6;
+}

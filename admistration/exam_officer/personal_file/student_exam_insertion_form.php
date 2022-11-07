@@ -37,7 +37,7 @@
                 $array = array($class, $term, 'term', 'table');
                 $class_table = implode('_', $array);
 
-                $query = "SELECT * FROM $class_table WHERE academic_session = '$session'";
+                $query = "SELECT * FROM $class_table WHERE academic_session = '$session' ORDER BY surname";
 
                 $query_run =mysqli_query($conn, $query);
 
@@ -118,21 +118,20 @@
                             <div id="heeder_content">
                             <div class="num complete-border head"><p>#</p></div>
                             <div class="name complete-border head"><p>name</p></div>
-                            <div class="add_num complete-border head"><p>addmission No</p></div>
+                            <div class="add_num complete-border head"><p>addm No</p></div>
                             <div class="subject complete-border head"><p>eng</p></div>
-                            <div class="subject complete-border head"><p>rel</p></div>
-                            <div class="subject complete-border head"><p>ent</p></div>
+                            <div class="subject complete-border head"><p>mat</p></div>
                             <div class="subject complete-border head"><p>phy</p></div>
                             <div class="subject complete-border head"><p>che</p></div>
                             <div class="subject complete-border head"><p>bio</p></div>
-                            <div class="subject complete-border head"><p>mat</p></div>
+                            <div class="subject complete-border head"><p>agri</p></div>
+                            <div class="subject complete-border head"><p>ent</p></div>
                             <div class="subject complete-border head"><p>f/m</p></div>
                             <div class="subject complete-border head"><p>eco</p></div>
-                            <div class="subject complete-border head"><p>Agri</p></div>
-                            <div class="subject complete-border head"><p>geo</p></div>
-                            <div class="subject complete-border head"><p>gov</p></div>
                             <div class="subject complete-border head"><p>com</p></div>
                             <div class="subject complete-border head"><p>civ</p></div>
+                            <div class="subject complete-border head"><p>geo</p></div>
+                            <div class="subject complete-border head"><p>rel</p></div>
                             
                         </div>
 
@@ -144,22 +143,25 @@
                             <div id="heeder_content">
                             <div class="num complete-border head"><p>#</p></div>
                             <div class="name complete-border head"><p>name</p></div>
-                            <div class="add_num complete-border head"><p>addmission No</p></div>
-                            <div class="subject complete-border head"><p>eng</p></div>
-                            <div class="subject complete-border head"><p>rel</p></div>
-                            <div class="subject complete-border head"><p>bus</p></div>
-                            <div class="subject complete-border head"><p>lit</p></div>
-                            <div class="subject complete-border head"><p>CCA</p></div>
-                            <div class="subject complete-border head"><p>fre</p></div>
+                            <div class="add_num complete-border head"><p>addm No</p></div>
                             <div class="subject complete-border head"><p>mat</p></div>
-                            <div class="subject complete-border head"><p>B/S</p></div>
-                            <div class="subject complete-border head"><p>H/E</p></div>
-                            <div class="subject complete-border head"><p>Agri</p></div>
+                            <div class="subject complete-border head"><p>eng</p></div>
+                            <div class="subject complete-border head"><p>b/s</p></div>
+                            <div class="subject complete-border head"><p>b/t</p></div>
+                            <div class="subject complete-border head"><p>sos</p></div>
                             <div class="subject complete-border head"><p>civ</p></div>
-                            <div class="subject complete-border head"><p>PHE</p></div>
-                            <div class="subject complete-border head"><p>B/T</p></div>
-                            <div class="subject complete-border head"><p>Com</p></div>
-                            
+                            <div class="subject complete-border head"><p>agri</p></div>
+                            <div class="subject complete-border head"><p>h/e</p></div>
+                            <div class="subject complete-border head"><p>rel</p></div>
+                            <div class="subject complete-border head"><p>kni</p></div>
+                            <div class="subject complete-border head"><p>com</p></div>
+                            <div class="subject complete-border head"><p>bus</p></div>
+                            <div class="subject complete-border head"><p>phe</p></div>
+                            <div class="subject complete-border head"><p>cca</p></div>
+                            <div class="subject complete-border head"><p>gam</p></div>
+                            <div class="subject complete-border head"><p>a/c</p></div>
+                            <div class="subject complete-border head"><p>lan</p></div>
+                            <div class="subject complete-border head"><p>woo</p></div>
                         </div>
                             
                             <?php
@@ -192,20 +194,19 @@
                                     <div class="add_num small-border body"><?php echo $addmission_number; ?></div>
                                     <input type="hidden" name="addmission_num[]" value="<?php echo $addmission_number?>">
                                     <input type="hidden" name="name<?php echo $addmission_number?>" value="<?php echo $surname.' '.$first_name.' '.$other_name ?>">
-                                    <div class="subject small-border body"><input type="number" min="0" max="70"  name="eng<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="rel<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="ent<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="phy<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="che<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="bio<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="mat<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="f_m<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="eco<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="agri<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="geo<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="gov<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="com<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="civ<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="eng<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="mat<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="phy<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="che<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="bio<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="agri<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="ent<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="f/m<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="eco<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="com<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="civ<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="geo<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="rel<?php echo $addmission_number?>" value=""></div>
                                     
                                 </div>
 
@@ -227,20 +228,24 @@
                                     <div class="add_num small-border body"><?php echo $addmission_number; ?></div>
                                     <input type="hidden" name="addmission_num[]" value="<?php echo $addmission_number?>">
                                     <input type="hidden" name="name<?php echo $addmission_number?>" value="<?php echo $surname.' '.$first_name.' '.$other_name ?>">
-                                    <div class="subject small-border body"><input type="number" min="0" max="70"  name="eng<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="rel<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="bus<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="lit<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="cca<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="fre<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="mat<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="b/s<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="h/e<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="agri<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="civ<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="phe<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="b/t<?php echo $addmission_number?>" value=""></div>
-                                    <div class="subject small-border body"><input type="number" min="0" max="70" name="com<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="mat<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="eng<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="b/s<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="b/t<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="sos<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="civ<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="agri<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="h/e<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="rel<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="kni<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="com<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="bus<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="phe<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="cca<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="gam<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="a/c<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="lan<?php echo $addmission_number?>" value=""></div>
+                                    <div class="subject small-border body"><input type="number" min="0" max="70" maxlength="70" name="woo<?php echo $addmission_number?>" value=""></div>
                                     
                                 </div>
 

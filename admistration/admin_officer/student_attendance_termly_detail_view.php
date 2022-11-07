@@ -44,7 +44,7 @@
 
 
 
-    $limit = 2;
+    $limit = 50;
 
     // from url??????????????????????????????????
 
@@ -96,7 +96,7 @@
 
 
 
-    $query = "SELECT * FROM $attendance_class_table WHERE session = '$session' AND term = '$term' GROUP BY addmission_num ORDER BY name LIMIT $start_from, $limit";
+    $query = "SELECT * FROM $attendance_class_table WHERE session = '$session' AND term = '$term' GROUP BY name LIMIT $start_from, $limit";
     $query_run = mysqli_query($conn, $query);
 
     $num = mysqli_num_rows($query_run);
@@ -144,7 +144,7 @@
                     <table>
                         <thead>
                             <tr>
-                                <th>#</th>
+                                <th>S/N</th>
                                 <th>name</th>
                                 <th>addmission number</th>
                                 <th>term</th>

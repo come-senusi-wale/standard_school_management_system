@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
 
             if ($query_run_two) {
                 
-                $school_mail = "walesaheed@gmail.com";
+                $school_mail = "eduspringofgrace@gmail.com";
                 $name = "email varification";
                 $subject = "code to varified ur email before register as exam officer";
                 $body = "copy this code  ".$exam_email_code." into space provide and continue the registration";
@@ -58,8 +58,8 @@ if (isset($_POST['submit'])) {
                 $mail->Port = 465;
                 $mail->SMTPAuth = true; // turn on SMTP authentication
 
-                $mail->Username = "waleschool20@gmail.com"; // SMTP username
-                $mail->Password = "zhapmmvvohwucrwr"; // SMTP password
+                $mail->Username = "eduspringofgrace@gmail.com"; // SMTP username
+                $mail->Password = "qcygveozmfpfacjw"; // SMTP password
                 
                
                 $mail->AddAddress($exam_email);

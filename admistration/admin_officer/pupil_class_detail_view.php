@@ -8,7 +8,7 @@
 
     include('action_php/database.php');
 
-    $limit = 2;
+    $limit = 50;
 
 
     if (isset($_GET['page'])) {
@@ -69,7 +69,7 @@
         header("location: pupil_class_detail_form.php?result=$out");
     }else{
 
-        $query = "SELECT * FROM $class_table WHERE academic_session = '$session' ORDER BY addmission_number LIMIT $start_from, $limit";
+        $query = "SELECT * FROM $class_table WHERE academic_session = '$session' ORDER BY surname LIMIT $start_from, $limit";
         $query_run = mysqli_query($conn, $query);
 
         $num = mysqli_num_rows($query_run);
@@ -127,6 +127,7 @@
                     <table>
                         <thead>
                             <tr>
+                                <th>S/N</th>
                                 <th>addmission number</th>
                                 <th>surname</th>
                                 <th>first name</th>
@@ -140,6 +141,8 @@
                         <?php
                         
                                     while ($row = mysqli_fetch_array($query_run)) {
+
+                                        $start_from++;
                                         
                                         $id = $row['id'];
                                         $addmission_number = $row['addmission_number'];
@@ -151,6 +154,7 @@
                                         ?>
 
                                         <tr>
+                                            <td><?php echo $start_from; ?></td>
                                             <td><?php echo $addmission_number; ?></td>
                                             <td><?php echo $surname; ?></td>
                                             <td><?php echo $first_name; ?></td>

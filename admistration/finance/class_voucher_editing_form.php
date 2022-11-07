@@ -42,7 +42,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>class voucher update form</title>
+    <title>student class voucher update form</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/links_css.css">
@@ -70,7 +70,7 @@
             <p style="color: blue;" id="correct"></p>
         </div>
 
-        <form action="class_voucher_amount_set_form.php"  method="POST">
+        <form action=""  method="POST">
 
 
             
@@ -269,6 +269,8 @@
                         success: function(data){
 
                             alert(data);
+                            $('#submit').val('update');
+                            $('#submit').attr('disabled', false);
                             /*if (data == 'generated') {
 
                                 alert('voucher successfully generated');

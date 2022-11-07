@@ -15,11 +15,18 @@
         $course = mysqli_real_escape_string($conn, $_POST['course']);
 
         $image = $_FILES['image'];
+        $cv = $_FILES['cv'];
 
         $image_name = $image['name'];
         $image_type = $image['type'];
         $image_size = $image['size'];
         $image_tmp = $image['tmp_name'];
+
+
+        $cv_name = $cv['name'];
+        $cv_type = $cv['type'];
+        $cv_size = $cv['size'];
+        $cv_tmp = $cv['tmp_name'];
 
         $query = "SELECT * FROM staff_registration_table WHERE email = '$email'";
         $query_run = mysqli_query($conn, $query);
@@ -48,7 +55,7 @@
                 
                 $image_real_name = $first_name.'.'.$unique.'.'.$image_exten;
 
-                $image_source = '../image/'.$first_name.'.'.$unique.'.'.$image_exten;
+                $image_source = '../../../image/staff/'.$first_name.'.'.$unique.'.'.$image_exten;
 
                 $location = move_uploaded_file($image_tmp, $image_source);
 
@@ -58,25 +65,58 @@
                     header("location: ../staff_registration_form.php?result=$output");
                 }else{
 
-                    $id_code = 8770;
-                    $status = 'active';
-                    $pwd = '7ygasaj';
-                    $pwd_token = 'ue77wa9w9w';
-                    $pwd_code = '3iwiiwei';
+                    $cv_explode =  explode('.', $cv_name);
 
-                    $query_two = "INSERT INTO staff_registration_table (surname, first_name, other_name, email, gender, address, image, age, decipline, course, pwd, pwd_code, pwd_token, id_code, status) VALUES ('$surname', '$first_name', '$other_name', '$email', '$gender', '$address', '$image_real_name', '$age', '$decipline', '$course', '$pwd', '$pwd_code', '$pwd_token', '$id_code', '$status')";
+                    $cv_exten = strtolower(end($cv_explode));
+        
+                    $allowed_cv = array('jpg', 'png', 'jpeg', 'pdf');
 
-                    $query_run_two = mysqli_query($conn, $query_two);
-
-                    if ($query_run_two) {
-                        
-                        $output = 'you are successfully registered';
-                        header("location: ../staff_registration_form.php?correct=$output");
-
+                    if (!in_array($cv_exten, $allowed_cv)) {
+                        $output = 'cv type not allowed';
+                        header("location: ../staff_registration_form.php?result=$output");
+        
                     }else{
 
-                        $output = 'fail to register';
-                        header("location: ../staff_registration_form.php?result=$output");
+                        $unique_cv = uniqid("", true);
+                
+                        $cv_real_name = $first_name.'.'.$unique_cv.'.'.$cv_exten;
+
+                        $cv_source = '../../../image/cv/'.$first_name.'.'.$unique_cv.'.'.$cv_exten;
+
+                        $location_cv = move_uploaded_file($cv_tmp, $cv_source);
+
+                        if (!$location_cv) {
+                    
+                            $output = 'cv fail to upload';
+                            header("location: ../staff_registration_form.php?result=$output");
+
+                        }else {
+        
+
+
+
+
+                            $id_code = 8770;
+                            $status = 'active';
+                            $pwd = '7ygasaj';
+                            $pwd_token = 'ue77wa9w9w';
+                            $pwd_code = '3iwiiwei';
+
+                            $query_two = "INSERT INTO staff_registration_table (surname, first_name, other_name, email, gender, address, image, age, decipline, course, pwd, pwd_code, pwd_token, id_code, status, cv) VALUES ('$surname', '$first_name', '$other_name', '$email', '$gender', '$address', '$image_real_name', '$age', '$decipline', '$course', '$pwd', '$pwd_code', '$pwd_token', '$id_code', '$status', '$cv_real_name')";
+
+                            $query_run_two = mysqli_query($conn, $query_two);
+
+                            if ($query_run_two) {
+                                
+                                $output = 'you are successfully registered';
+                                header("location: ../staff_registration_form.php?correct=$output");
+
+                            }else{
+
+                                $output = 'fail to register';
+                                header("location: ../staff_registration_form.php?result=$output");
+                            }
+                        }
                     }
                 }
             }

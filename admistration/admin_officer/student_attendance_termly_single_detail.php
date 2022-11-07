@@ -82,7 +82,7 @@
                             <td class="quantity"><?php echo $name; ?></td>
                         </tr>
                         <tr>
-                            <td class="name">email</td>
+                            <td class="name">addmission number</td>
                             <td class="quantity"><?php echo $addmission_num ?></td>
                         </tr>
                         <tr>

@@ -24,7 +24,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calss online exam result form</title>
+    <title>student calss online exam result form</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/links_css.css">
@@ -45,7 +45,7 @@
     <div id="form_container">
 
 
-        <h2>class online result form</h2>
+        <h2>student class online exam/test result form</h2>
 
         <div id="error" style="text-align: center;">
             <p style="color: tomato; margin-bottom: 20px;" id="fail"><?php echo $fail; ?></p>

@@ -1270,7 +1270,7 @@ if (isset($_POST['action'])) {
                             v_r INT(99) NOT NULL,
                             q_r INT(99) NOT NULL,
                             r_s INT(99) NOT NULL,
-                            cdv INT(99) NOT NULL,
+                            ldv INT(99) NOT NULL,
 
                             ple INT(99) NOT NULL,
                             sos INT(99) NOT NULL,
@@ -1288,7 +1288,7 @@ if (isset($_POST['action'])) {
                             f_v_r INT(99) NOT NULL,
                             f_q_r INT(99) NOT NULL,
                             f_r_s INT(99) NOT NULL,
-                            f_cdv INT(99) NOT NULL,
+                            f_ldv INT(99) NOT NULL,
 
                             f_ple INT(99) NOT NULL,
                             f_sos INT(99) NOT NULL,
@@ -1307,7 +1307,7 @@ if (isset($_POST['action'])) {
                             s_v_r INT(99) NOT NULL,
                             s_q_r INT(99) NOT NULL,
                             s_r_s INT(99) NOT NULL,
-                            s_cdv INT(99) NOT NULL,
+                            s_ldv INT(99) NOT NULL,
 
                             s_ple INT(99) NOT NULL,
                             s_sos INT(99) NOT NULL,
@@ -1324,7 +1324,7 @@ if (isset($_POST['action'])) {
                             to_v_r INT(99) NOT NULL,
                             to_q_r INT(99) NOT NULL,
                             to_r_s INT(99) NOT NULL,
-                            to_cdv INT(99) NOT NULL,
+                            to_ldv INT(99) NOT NULL,
 
                             to_ple INT(99) NOT NULL,
                             to_sos INT(99) NOT NULL,
@@ -1365,7 +1365,7 @@ if (isset($_POST['action'])) {
                             v_r INT(99) NOT NULL,
                             q_r INT(99) NOT NULL,
                             r_s INT(99) NOT NULL,
-                            cdv INT(99) NOT NULL,
+                            ldv INT(99) NOT NULL,
 
                             ple INT(99) NOT NULL,
                             sos INT(99) NOT NULL,
@@ -1407,7 +1407,7 @@ if (isset($_POST['action'])) {
                             v_r INT(99) NOT NULL,
                             q_r INT(99) NOT NULL,
                             r_s INT(99) NOT NULL,
-                            cdv INT(99) NOT NULL,
+                            ldv INT(99) NOT NULL,
 
                             ple INT(99) NOT NULL,
                             sos INT(99) NOT NULL,
@@ -1446,7 +1446,7 @@ if (isset($_POST['action'])) {
                             v_r INT(99) NOT NULL,
                             q_r INT(99) NOT NULL,
                             r_s INT(99) NOT NULL,
-                            cdv INT(99) NOT NULL,
+                            ldv INT(99) NOT NULL,
 
                             ple INT(99) NOT NULL,
                             sos INT(99) NOT NULL,

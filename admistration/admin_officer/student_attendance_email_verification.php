@@ -54,7 +54,7 @@
         <div id="form_container">
 
 
-            <h2>formaster/formistress email verification</h2>
+            <h2>student formaster/formistress email verification</h2>
 
             <div id="error" style="text-align: center;">
                 <p id="error_checker" style="color: tomato;"></p>

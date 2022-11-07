@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
 
         if ($query_run_two) {
             
-            $school_mail = "walesaheed@gmail.com";
+            $school_mail = "eduspringofgrace@gmail.com";
             $name = "email varification";
             $subject = "code to varified ur email before before reseting ur password";
             $body = "copy this code  ".$pwd_code." into space provide and reset ur password";
@@ -47,8 +47,8 @@ if (isset($_POST['submit'])) {
             $mail->Port = 465;
             $mail->SMTPAuth = true; // turn on SMTP authentication
             
-            $mail->Username = "waleschool20@gmail.com"; // SMTP username
-            $mail->Password = "zhapmmvvohwucrwr"; // SMTP password
+            $mail->Username = "eduspringofgrace@gmail.com"; // SMTP username
+            $mail->Password = "qcygveozmfpfacjw"; // SMTP password
             //$Mail->Priority = 1;
             $mail->AddAddress($email);
             $mail->SetFrom($school_mail, $name);

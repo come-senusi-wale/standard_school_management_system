@@ -71,7 +71,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>student ca edit form</title>
+    <title>student exam edit form</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/links_css.css">
@@ -121,19 +121,18 @@
                             <div class="name complete-border head"><p>name</p></div>
                             <div class="add_num complete-border head"><p>addmission No</p></div>
                             <div class="subject complete-border head"><p>eng</p></div>
-                            <div class="subject complete-border head"><p>rel</p></div>
-                            <div class="subject complete-border head"><p>ent</p></div>
+                            <div class="subject complete-border head"><p>mat</p></div>
                             <div class="subject complete-border head"><p>phy</p></div>
                             <div class="subject complete-border head"><p>che</p></div>
                             <div class="subject complete-border head"><p>bio</p></div>
-                            <div class="subject complete-border head"><p>mat</p></div>
+                            <div class="subject complete-border head"><p>agri</p></div>                            
+                            <div class="subject complete-border head"><p>ent</p></div>
                             <div class="subject complete-border head"><p>f/m</p></div>
                             <div class="subject complete-border head"><p>eco</p></div>
-                            <div class="subject complete-border head"><p>Agri</p></div>
-                            <div class="subject complete-border head"><p>geo</p></div>
-                            <div class="subject complete-border head"><p>gov</p></div>
-                            <div class="subject complete-border head"><p>com</p></div>
+                            <div class="subject complete-border head"><p>com</p></div>                            
                             <div class="subject complete-border head"><p>civ</p></div>
+                            <div class="subject complete-border head"><p>geo</p></div>
+                            <div class="subject complete-border head"><p>rel</p></div>
                             
                         </div>
 
@@ -146,20 +145,24 @@
                             <div class="num complete-border head"><p>#</p></div>
                             <div class="name complete-border head"><p>name</p></div>
                             <div class="add_num complete-border head"><p>addmission No</p></div>
-                            <div class="subject complete-border head"><p>eng</p></div>
-                            <div class="subject complete-border head"><p>rel</p></div>
-                            <div class="subject complete-border head"><p>bus</p></div>
-                            <div class="subject complete-border head"><p>lit</p></div>
-                            <div class="subject complete-border head"><p>CCA</p></div>
-                            <div class="subject complete-border head"><p>fre</p></div>
                             <div class="subject complete-border head"><p>mat</p></div>
-                            <div class="subject complete-border head"><p>B/S</p></div>
-                            <div class="subject complete-border head"><p>H/E</p></div>
-                            <div class="subject complete-border head"><p>Agri</p></div>
+                            <div class="subject complete-border head"><p>eng</p></div>
+                            <div class="subject complete-border head"><p>b/s</p></div>
+                            <div class="subject complete-border head"><p>b/t</p></div>
+                            <div class="subject complete-border head"><p>sos</p></div>
                             <div class="subject complete-border head"><p>civ</p></div>
-                            <div class="subject complete-border head"><p>PHE</p></div>
-                            <div class="subject complete-border head"><p>B/T</p></div>
-                            <div class="subject complete-border head"><p>Com</p></div>
+                            <div class="subject complete-border head"><p>agri</p></div>
+                            <div class="subject complete-border head"><p>h/e</p></div>
+                            <div class="subject complete-border head"><p>rel</p></div>
+                            <div class="subject complete-border head"><p>kni</p></div>
+                            <div class="subject complete-border head"><p>com</p></div>
+                            <div class="subject complete-border head"><p>bus</p></div>
+                            <div class="subject complete-border head"><p>phe</p></div>
+                            <div class="subject complete-border head"><p>cca</p></div>
+                            <div class="subject complete-border head"><p>gam</p></div>
+                            <div class="subject complete-border head"><p>a/c</p></div>
+                            <div class="subject complete-border head"><p>lan</p></div>
+                            <div class="subject complete-border head"><p>woo</p></div>
                             
                         </div>
                             
@@ -177,8 +180,9 @@
                         while ($row = mysqli_fetch_array($query_run_two)) {
 
                             if ($category == 'senior') {
-                                
+
                                 $name = $row['name'];
+                                
                                 $eng = $row['eng'];
                                 $rel = $row['rel'];
                                 $ent = $row['ent'];
@@ -193,7 +197,6 @@
 
                                 $agri = $row['agri'];
                                 $geo = $row['geo'];
-                                $gov = $row['gov'];
                                 $com = $row['com'];
 
                                 $civ = $row['civ'];
@@ -210,19 +213,18 @@
                                     <input type="hidden" name="addmission_number" value="<?php echo $addmission_number?>">
                                     
                                     <div class="subject small-border body"><input type="number" name="eng<?php echo $addmission_number?>" value="<?php echo $eng  ?>"></div>
-                                    <div class="subject small-border body"><input type="number" name="rel<?php echo $addmission_number?>" value="<?php echo $rel  ?>"></div>
-                                    <div class="subject small-border body"><input type="number" name="ent<?php echo $addmission_number?>" value="<?php echo $ent  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="mat<?php echo $addmission_number?>" value="<?php echo $mat  ?>"></div>
                                     <div class="subject small-border body"><input type="number" name="phy<?php echo $addmission_number?>" value="<?php echo $phy  ?>"></div>
                                     <div class="subject small-border body"><input type="number" name="che<?php echo $addmission_number?>" value="<?php echo $che  ?>"></div>
                                     <div class="subject small-border body"><input type="number" name="bio<?php echo $addmission_number?>" value="<?php echo $bio  ?>"></div>
-                                    <div class="subject small-border body"><input type="number" name="mat<?php echo $addmission_number?>" value="<?php echo $mat  ?>"></div>
-                                    <div class="subject small-border body"><input type="number" name="f/m<?php echo $addmission_number?>" value="<?php echo $f_m  ?>"></div>
-                                    <div class="subject small-border body"><input type="number" name="eco<?php echo $addmission_number?>" value="<?php echo $eco  ?>"></div>
                                     <div class="subject small-border body"><input type="number" name="agri<?php echo $addmission_number?>" value="<?php echo $agri  ?>"></div>
-                                    <div class="subject small-border body"><input type="number" name="geo<?php echo $addmission_number?>" value="<?php echo $geo  ?>"></div>
-                                    <div class="subject small-border body"><input type="number" name="gov<?php echo $addmission_number?>" value="<?php echo $gov  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="ent<?php echo $addmission_number?>" value="<?php echo $ent  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="f_m<?php echo $addmission_number?>" value="<?php echo $f_m  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="eco<?php echo $addmission_number?>" value="<?php echo $eco  ?>"></div>
                                     <div class="subject small-border body"><input type="number" name="com<?php echo $addmission_number?>" value="<?php echo $com  ?>"></div>
                                     <div class="subject small-border body"><input type="number" name="civ<?php echo $addmission_number?>" value="<?php echo $civ  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="geo<?php echo $addmission_number?>" value="<?php echo $geo  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="rel<?php echo $addmission_number?>" value="<?php echo $rel  ?>"></div>
                                     
                                 </div>
 
@@ -232,13 +234,14 @@
                             }else {
                                 
                                 $name = $row['name'];
+                                
                                 $eng = $row['eng'];
                                 $rel = $row['rel'];
                                 $bus = $row['bus'];
 
-                                $lit = $row['lit'];
+                                $sos = $row['sos'];
                                 $cca = $row['cca'];
-                                $fre = $row['fre'];
+                                $kni = $row['kni'];
 
                                 $mat = $row['mat'];
                                 $b_s = $row['b_s'];
@@ -250,6 +253,11 @@
                                 $b_t = $row['b_t'];
 
                                 $com = $row['com'];
+                                $gam = $row['gam'];
+                                $a_c = $row['a_c'];
+
+                                $lan = $row['lan'];
+                                $woo = $row['woo'];
                                 
                                 
 
@@ -262,20 +270,24 @@
                                     <div class="add_num small-border body"><?php echo $addmission_number; ?></div>
                                     <input type="hidden" name="addmission_number" value="<?php echo $addmission_number?>">
                                     
-                                    <div class="subject small-border body"><input type="number" name="eng<?php echo $addmission_number?>" value="<?php echo $eng  ?>"></div>
-                                    <div class="subject small-border body"><input type="number" name="rel<?php echo $addmission_number?>" value="<?php echo $rel  ?>"></div>
-                                    <div class="subject small-border body"><input type="number" name="bus<?php echo $addmission_number?>" value="<?php echo $bus  ?>"></div>
-                                    <div class="subject small-border body"><input type="number" name="lit<?php echo $addmission_number?>" value="<?php echo $lit  ?>"></div>
-                                    <div class="subject small-border body"><input type="number" name="cca<?php echo $addmission_number?>" value="<?php echo $cca  ?>"></div>
-                                    <div class="subject small-border body"><input type="number" name="fre<?php echo $addmission_number?>" value="<?php echo $fre  ?>"></div>
                                     <div class="subject small-border body"><input type="number" name="mat<?php echo $addmission_number?>" value="<?php echo $mat  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="eng<?php echo $addmission_number?>" value="<?php echo $eng  ?>"></div>
                                     <div class="subject small-border body"><input type="number" name="b/s<?php echo $addmission_number?>" value="<?php echo $b_s  ?>"></div>
-                                    <div class="subject small-border body"><input type="number" name="h/e<?php echo $addmission_number?>" value="<?php echo $h_e  ?>"></div>
-                                    <div class="subject small-border body"><input type="number" name="agri<?php echo $addmission_number?>" value="<?php echo $agri  ?>"></div>
-                                    <div class="subject small-border body"><input type="number" name="civ<?php echo $addmission_number?>" value="<?php echo $civ  ?>"></div>
-                                    <div class="subject small-border body"><input type="number" name="phe<?php echo $addmission_number?>" value="<?php echo $phe  ?>"></div>
                                     <div class="subject small-border body"><input type="number" name="b/t<?php echo $addmission_number?>" value="<?php echo $b_t  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="sos<?php echo $addmission_number?>" value="<?php echo $sos  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="civ<?php echo $addmission_number?>" value="<?php echo $civ  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="agri<?php echo $addmission_number?>" value="<?php echo $agri  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="h/e<?php echo $addmission_number?>" value="<?php echo $h_e ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="rel<?php echo $addmission_number?>" value="<?php echo $rel  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="kni<?php echo $addmission_number?>" value="<?php echo $kni  ?>"></div>
                                     <div class="subject small-border body"><input type="number" name="com<?php echo $addmission_number?>" value="<?php echo $com  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="bus<?php echo $addmission_number?>" value="<?php echo $bus  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="phe<?php echo $addmission_number?>" value="<?php echo $phe  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="cca<?php echo $addmission_number?>" value="<?php echo $cca  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="gam<?php echo $addmission_number?>" value="<?php echo $gam  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="a/c<?php echo $addmission_number?>" value="<?php echo $a_c  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="lan<?php echo $addmission_number?>" value="<?php echo $lan  ?>"></div>
+                                    <div class="subject small-border body"><input type="number" name="woo<?php echo $addmission_number?>" value="<?php echo $woo  ?>"></div>
                                     
                                 </div>
                             

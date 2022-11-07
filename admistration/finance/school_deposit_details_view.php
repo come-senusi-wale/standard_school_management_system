@@ -52,7 +52,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>school deposit details view</title>
+    <title>secondary school deposit details view</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/links_css.css">
@@ -81,9 +81,9 @@
 
     <section id="reg_section">
         <div class="reg_header">
-            <h2><?php echo $term ?> term depositing details</h2>
+            <h2>secondary school <?php echo $term ?> term depositing details</h2>
             <p id="error" style="color: red;"></p>
-            <h2>academic session:<?php echo $session ?> </h2>
+            <h2>academy session:<?php echo $session ?> </h2>
         </div>
     
         <div class="reg_body">
